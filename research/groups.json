@@ -1,0 +1,44 @@
+{
+  "docs_platform": [
+    "dsh-requirement-dev-workbench",
+    "dsh-obsidian",
+    "dsh-obsidian-skills",
+    "obsidian-dsh-acp",
+    "dsh-lark-minutes-dashboard",
+    "dsh-notion-oauth-ui",
+    "dsh-qundao-doc",
+    "dsh-notion-mcp",
+    "dsh-yuque-kb",
+    "@hs666-ai/dsh-tencent-docs-bridge",
+    "dsh-plugin-yuque-notes",
+    "dsh-plugin-yuque"
+  ],
+  "invoice_finance": [
+    "dsh-reference-session-collector",
+    "@jayyuen66/dsh-plugin-shared",
+    "dsh-ai-credits",
+    "@jayyuen66/dsh-rtk",
+    "dsh-go-aliyun-quota",
+    "dsh-te-core",
+    "dsh-te-cost",
+    "@dhr2333/dsh-ledger",
+    "dsh-te",
+    "dsh-wealth",
+    "@vacum972/dsh-usage-billing",
+    "dsh-invoice-check"
+  ],
+  "legal": [
+    "pactive",
+    "dsh-mont-bidcopilot",
+    "kujira",
+    "dsh-plugin-zhixing-ark-erp",
+    "@liuhange/dsh-contract-redline",
+    "dsh-plugin-dev-kb",
+    "dsh-ai-article",
+    "dsh-thesis",
+    "@liuhange/dsh-gov-doc-router",
+    "dsh-tool-writing",
+    "@58catmiao/dsh-sciwork",
+    "dsh-plugin-spec"
+  ]
+}
