@@ -1,0 +1,18 @@
+[
+  "dsh-swarm-console",
+  "@xiaoyuyu6420/dsh-backup",
+  "dsh-plugin-health",
+  "dsh-cost-meter",
+  "@jayyuen66/dsh-danger-guard",
+  "dsh-isolation-gate",
+  "dsh-doublecheck",
+  "@bushizhanghan/dsh-publish-gate",
+  "dsh-context",
+  "dsh-mnemon",
+  "dsh-pet",
+  "dsh-config-manager",
+  "dsh-review",
+  "dsh-plugin-catalog",
+  "dsh-session-repair",
+  "dsh-marketplace"
+]

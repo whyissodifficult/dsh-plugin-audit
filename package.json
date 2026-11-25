@@ -1,0 +1,14 @@
+{
+  "name": "dsh-plugin-audit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static audit for DeepSeek Harness plugins: read-only, never executes plugin code.",
+  "type": "module",
+  "scripts": {
+    "audit": "node audit/audit.mjs --from targets.json --out out"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
