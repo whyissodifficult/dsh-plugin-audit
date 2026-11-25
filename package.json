@@ -1,5 +1,5 @@
 {
-  "name": "dsh-plugin-audit",
+  "name": "@whyissodifficult/dsh-plugin-audit",
   "version": "0.1.0",
   "description": "只读静态审计 DeepSeek Harness 插件：不解包执行代码，只列红旗（安装期脚本 / 破坏性命令 / 非常规依赖 / 外部域名）。",
   "type": "module",
@@ -40,5 +40,8 @@
     "type": "git",
     "url": "git+https://github.com/whyissodifficult/dsh-plugin-audit.git"
   },
-  "homepage": "https://github.com/whyissodifficult/dsh-plugin-audit#readme"
+  "homepage": "https://github.com/whyissodifficult/dsh-plugin-audit#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }

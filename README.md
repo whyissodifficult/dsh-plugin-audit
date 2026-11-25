@@ -6,17 +6,18 @@
 
 ## 用法
 
-> npm 包名还没发布（granular token 目前只授权了另一个包）。**现在就能这样跑**：
+> **现在就能跑**（不经 npm）：
 
 ```bash
 npx -y github:whyissodifficult/dsh-plugin-audit dsh-swarm-console
 ```
 
-发布后可以直接用短名字：
+npm 上已发布 `@whyissodifficult/dsh-plugin-audit`（注意：裸名 `dsh-plugin-audit` 已被他人占用，
+那个包做的是"运行时哨兵"，与本工具的静态审计不是同一件事）：
 
 ```bash
 # 审计一个插件
-npx dsh-plugin-audit dsh-swarm-console
+npx @whyissodifficult/dsh-plugin-audit dsh-swarm-console
 
 # 审计多个
 npx dsh-plugin-audit dsh-backup dsh-pet
