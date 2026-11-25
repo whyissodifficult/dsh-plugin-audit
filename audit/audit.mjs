@@ -14,6 +14,7 @@ import { execFileSync } from 'node:child_process'
 import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync, existsSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
+import { pathToFileURL } from 'node:url'
 import { gzipSync } from 'node:zlib'
 
 const REGISTRY = 'https://registry.npmjs.org'
@@ -86,7 +87,7 @@ const isCode = (rel) => CODE_EXT.test(rel) && !/\.d\.ts$/i.test(rel) && !/^packa
  * 每条规则返回 { id, level: 'high'|'mid'|'low', hit: boolean, note?: string }
  * level 表示“命中时的问题严重度”，用于扣分与展示。
  */
-function runRules(pkg, files, texts, codeTexts, evidence) {
+export function runRules(pkg, files, texts, codeTexts, evidence) {
   const rules = []
   const add = (id, level, hit, note = '') => rules.push({ id, level, hit, note })
 
@@ -165,16 +166,20 @@ function runRules(pkg, files, texts, codeTexts, evidence) {
 }
 
 /** 从代码里抽出"具体碰了什么"：路径与域名（只取证据，不做判断）。 */
-function extractEvidence(codeTexts) {
+export function extractEvidence(codeTexts) {
   const paths = new Set()
   const domains = new Set()
   const PATH_RE = /['"`]([~.]?[A-Za-z0-9_./\\-]*[./\\]?\.dsh[/\\][^'"`\s]{0,80})['"`]/g
-  const ABS_RE = /['"`]((?:[A-Za-z]:[\\/]|\/(?:etc|usr|var|home|opt)\/)[^'"`\s]{2,80})['"`]/g
+  const ABS_RE = /['"`]((?:[A-Za-z]:[\\/]|\/(?:etc|var|home|opt|Users)\/)[^'"`\s]{2,80})['"`]/g
+  const BIN_LIKE = /(^|[\\/])(bin|sbin|libexec)[\\/]|\/(usr|opt\/homebrew)\/bin\//i
   const URL_RE = /https?:\/\/([a-z0-9.-]+\.[a-z]{2,})/gi
   const SKIP = /^(localhost|127\.0\.0\.1|github\.com|raw\.githubusercontent\.com|registry\.npmjs\.org|www\.npmjs\.com|npmjs\.com|api\.github\.com|nodejs\.org|opensource\.org|creativecommons\.org|img\.shields\.io|shields\.io)$/i
   for (const { text } of codeTexts) {
     for (const m of text.matchAll(PATH_RE)) if (paths.size < 12) paths.add(m[1])
-    for (const m of text.matchAll(ABS_RE)) if (paths.size < 12) paths.add(m[1])
+    for (const m of text.matchAll(ABS_RE)) {
+      if (BIN_LIKE.test(m[1])) continue   // 可执行文件路径不算“会写哪里”
+      if (paths.size < 12) paths.add(m[1])
+    }
     for (const m of text.matchAll(URL_RE)) {
       const host = m[1].toLowerCase()
       if (!SKIP.test(host) && domains.size < 12) domains.add(host)
@@ -183,7 +188,7 @@ function extractEvidence(codeTexts) {
   return { paths: [...paths], domains: [...domains] }
 }
 
-function scoreOf(rules) {
+export function scoreOf(rules) {
   const weight = { high: 15, mid: 6, low: 2 }
   let score = 100
   for (const r of rules) if (r.hit) score -= weight[r.level]
@@ -197,7 +202,7 @@ function scoreOf(rules) {
   return score
 }
 
-function gradeOf(score) {
+export function gradeOf(score) {
   if (score >= 85) return 'A'
   if (score >= 70) return 'B'
   if (score >= 55) return 'C'
@@ -206,7 +211,7 @@ function gradeOf(score) {
 
 // ── 单个包审计 ─────────────────────────────────────────────────────────
 
-async function auditOne(name) {
+export async function auditOne(name) {
   const packument = await fetchJson(`${REGISTRY}/${encodeURIComponent(name).replace('%40', '@')}`)
   const latest = packument['dist-tags']?.latest
   if (!latest) throw new Error('没有 latest 版本')
@@ -251,74 +256,53 @@ async function auditOne(name) {
   }
 }
 
-// ── 入口 ───────────────────────────────────────────────────────────────
+// ── 入口（仅在 `node audit/audit.mjs` 直接运行时执行；被 import 时跳过）──
 
-const argv = process.argv.slice(2)
-let names = []
-let outDir = 'out'
-let fromFile = null
-for (let i = 0; i < argv.length; i++) {
-  const a = argv[i]
-  if (a === '--out') { outDir = argv[++i] ?? 'out'; continue }
-  if (a === '--from') { fromFile = argv[++i] ?? null; continue }
-  if (a.startsWith('--')) continue
-  names.push(a)
-}
-if (fromFile) {
-  const raw = JSON.parse(readFileSync(fromFile, 'utf8'))
-  names = names.concat(raw.map((x) => (typeof x === 'string' ? x : x?.name)).filter(Boolean))
-}
+const isMain = process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url
 
-if (names.length === 0) {
-  console.error('用法: node audit/audit.mjs <包名...> [--out out/]')
-  process.exit(2)
-}
-
-mkdirSync(outDir, { recursive: true })
-mkdirSync(join(outDir, 'cache'), { recursive: true })
-const results = []
-for (const name of names) {
-  const cacheFile = join(outDir, 'cache', name.replace(/[\\/@]/g, '_') + '.json')
-  if (existsSync(cacheFile)) {
-    const cached = JSON.parse(readFileSync(cacheFile, 'utf8'))
-    results.push(cached)
-    console.log(`${name} … 缓存 ${cached.grade ?? 'ERR'}`)
-    continue
+if (isMain) {
+  const argv = process.argv.slice(2)
+  let names = []
+  let outDir = 'out'
+  let fromFile = null
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i]
+    if (a === '--out') { outDir = argv[++i] ?? 'out'; continue }
+    if (a === '--from') { fromFile = argv[++i] ?? null; continue }
+    if (a.startsWith('--')) continue
+    names.push(a)
   }
-  process.stdout.write(`审计 ${name} … `)
-  try {
-    const r = await auditOne(name)
-    writeFileSync(cacheFile, JSON.stringify(r, null, 2), 'utf8')
-    results.push(r)
-    console.log(`${r.grade} (${r.score})  ${r.findings.length} 项发现`)
-  } catch (error) {
-    results.push({ name, error: String(error?.message ?? error) })
-    console.log(`失败：${error?.message ?? error}`)
+  if (fromFile) {
+    const raw = JSON.parse(readFileSync(fromFile, 'utf8'))
+    names = names.concat(raw.map((x) => (typeof x === 'string' ? x : x?.name)).filter(Boolean))
   }
-  await sleep(150)
+  if (names.length === 0) {
+    console.error('用法: node audit/audit.mjs <包名...> [--from list.json] [--out dir]')
+    process.exit(2)
+  }
+
+  mkdirSync(outDir, { recursive: true })
+  mkdirSync(join(outDir, 'cache'), { recursive: true })
+  const results = []
+  for (const name of names) {
+    const cacheFile = join(outDir, 'cache', name.replace(/[\\/@]/g, '_') + '.json')
+    if (existsSync(cacheFile)) {
+      results.push(JSON.parse(readFileSync(cacheFile, 'utf8')))
+      console.log(`${name} … 缓存`)
+      continue
+    }
+    process.stdout.write(`审计 ${name} … `)
+    try {
+      const r = await auditOne(name)
+      writeFileSync(cacheFile, JSON.stringify(r, null, 2), 'utf8')
+      results.push(r)
+      console.log(`${r.grade} (${r.score})  ${r.findings.length} 项发现`)
+    } catch (error) {
+      results.push({ name, error: String(error?.message ?? error) })
+      console.log(`失败：${error?.message ?? error}`)
+    }
+    await sleep(150)
+  }
+  writeFileSync(join(outDir, 'audit.json'), JSON.stringify(results, null, 2), 'utf8')
+  console.log(`\n完成 ${results.length} 个，结果在 ${outDir}/audit.json`)
 }
-
-writeFileSync(join(outDir, 'audit.json'), JSON.stringify(results, null, 2), 'utf8')
-
-const rows = results.map((r) => {
-  if (r.error) return `| \`${r.name}\` | — | — | 审计失败：${r.error} |`
-  const top = r.findings.slice(0, 3).map((f) => f.id).join(', ') || '无'
-  return `| \`${r.name}\`@${r.version} | **${r.grade}** | ${r.score} | ${top} |`
-})
-const md = [
-  '# DSH 插件审计（静态）',
-  '',
-  `生成时间：${new Date().toISOString()}`,
-  '',
-  '| 插件 | 等级 | 分数 | 主要发现 |',
-  '| --- | --- | --- | --- |',
-  ...rows,
-  '',
-  '> 只读静态分析：不执行插件代码。发现项为**线索**，不是漏洞结论。',
-].join('\n')
-writeFileSync(join(outDir, 'audit.md'), md, 'utf8')
-
-// 同时写一份 gzip 便于归档
-writeFileSync(join(outDir, 'audit.json.gz'), gzipSync(Buffer.from(JSON.stringify(results, null, 2))))
-
-console.log(`\n完成 ${results.length} 个，结果在 ${outDir}/audit.{json,md}`)

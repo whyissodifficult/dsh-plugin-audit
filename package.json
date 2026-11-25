@@ -1,14 +1,44 @@
 {
   "name": "dsh-plugin-audit",
   "version": "0.1.0",
-  "private": true,
-  "description": "Static audit for DeepSeek Harness plugins: read-only, never executes plugin code.",
+  "description": "只读静态审计 DeepSeek Harness 插件：不解包执行代码，只列红旗（安装期脚本 / 破坏性命令 / 非常规依赖 / 外部域名）。",
   "type": "module",
-  "scripts": {
-    "audit": "node audit/audit.mjs --from targets.json --out out"
+  "bin": {
+    "dsh-plugin-audit": "./bin/cli.mjs"
   },
+  "exports": {
+    ".": "./audit/audit.mjs",
+    "./report": "./audit/report.mjs"
+  },
+  "files": [
+    "bin",
+    "audit/audit.mjs",
+    "audit/report.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "audit": "node bin/cli.mjs",
+    "collect": "node audit/collect.mjs",
+    "report": "node audit/report.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin-audit",
+    "supply-chain",
+    "static-analysis",
+    "security"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whyissodifficult/dsh-plugin-audit.git"
+  },
+  "homepage": "https://github.com/whyissodifficult/dsh-plugin-audit#readme"
 }

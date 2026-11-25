@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: 规则单测
+        run: node --test test/*.test.mjs
+      - name: CLI 冒烟（自审本仓库作者的门禁插件）
+        run: node bin/cli.mjs dsh-swarm-console
+      - name: 打包自检
+        run: npm pack --dry-run
