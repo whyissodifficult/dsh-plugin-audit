@@ -1,0 +1,62 @@
+{
+  "name": "dsh-autorestart",
+  "version": "1.0.0",
+  "grade": "A",
+  "score": 88,
+  "tarballBytes": 1017554,
+  "fileCount": 56,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-25T04:19:00.658Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/backup.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/legacy-cleanup.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/diagnostics.js 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

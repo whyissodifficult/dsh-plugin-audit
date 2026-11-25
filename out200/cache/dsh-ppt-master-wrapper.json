@@ -1,0 +1,47 @@
+{
+  "name": "dsh-ppt-master-wrapper",
+  "version": "6.10.0-r1",
+  "grade": "A",
+  "score": 94,
+  "tarballBytes": 17672432,
+  "fileCount": 13115,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-19T11:47:47.321Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 scripts/check-dsh-compat.mjs 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/tools.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/tools.js 里出现网络调用/硬编码域名"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "no-tests-in-package",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

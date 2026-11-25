@@ -1,0 +1,1402 @@
+[
+  {
+    "name": "dsh-windows-mcp",
+    "version": "0.2.12",
+    "published": "2026-11-23T12:35:45.282Z",
+    "weekly": 120962,
+    "description": "Windows desktop automation for DeepSeek Harness — plugs CursorTouch/Windows-MCP (screenshot, UI automation, input, clipb"
+  },
+  {
+    "name": "dsh-context",
+    "version": "0.87.1",
+    "published": "2026-11-22T18:21:21.605Z",
+    "weekly": 116103,
+    "description": "A DeepSeek Harness plugin for context insight and management, with context dashboard and context command, for understand"
+  },
+  {
+    "name": "dsh-plugin-catalog",
+    "version": "2026.1125.27413",
+    "published": "2026-11-25T06:23:32.518Z",
+    "weekly": 89455,
+    "description": "The DeepSeek Harness plugin catalog (13136 entries) · DeepSeek Harness 插件目录"
+  },
+  {
+    "name": "ds-harness-remote",
+    "version": "0.6.8",
+    "published": "2026-11-25T06:10:49.053Z",
+    "weekly": 36834,
+    "description": "P2P-based, end-to-end encrypted remote access to DeepSeek Harness, CodeX, Claude Code, Pi, and other workspaces from web"
+  },
+  {
+    "name": "@stardustlc/dsh-updates",
+    "version": "0.2.10",
+    "published": "2026-11-20T10:30:45.357Z",
+    "weekly": 30549,
+    "description": "Shared opt-in update checks and native DSH plugin update controls for STARDUSTLC plugins."
+  },
+  {
+    "name": "@linxin666/dsh-client-ui-skill-explorer",
+    "version": "0.4.22",
+    "published": "2026-11-24T09:14:13.159Z",
+    "weekly": 28696,
+    "description": "DSH skill center: browse loaded skills by source (bundled / project / user / custom / runtime), enable or disable, creat"
+  },
+  {
+    "name": "dsh-plugin-wallpaper-engine",
+    "version": "1.4.3",
+    "published": "2026-11-18T16:56:30.702Z",
+    "weekly": 24824,
+    "description": "Wallpaper Engine backgrounds for the DSH web GUI: render your local Wallpaper Engine wallpapers behind the chat — Scene "
+  },
+  {
+    "name": "dsh-plugin-wallpaper-engine-pet-link",
+    "version": "1.4.3",
+    "published": "2026-11-18T16:53:55.870Z",
+    "weekly": 24090,
+    "description": "Optional official dsh-pet bridge: public API control, four interaction sequences and independent page bubbles; no bundle"
+  },
+  {
+    "name": "@xmanrui/dsh-im",
+    "version": "5.10.0",
+    "published": "2026-11-03T16:53:33.154Z",
+    "weekly": 20801,
+    "description": "把微信、飞书、企微、钉钉、QQ、Telegram、WhatsApp、Slack、Discord、Matrix接入DSH。 Connect Telegram, WhatsApp, Slack, Discord, Matrix, WeChat,"
+  },
+  {
+    "name": "dsh-mcp-registry",
+    "version": "0.3.21",
+    "published": "2026-11-22T02:21:30.852Z",
+    "weekly": 19151,
+    "description": "dsh-mcp-registry: DSH plugin — a governed registry for MCP connectors (stdio / streamable-http). Multi-level fail-closed"
+  },
+  {
+    "name": "@linxin666/dsh-client-ui-skin-center",
+    "version": "0.4.22",
+    "published": "2026-11-24T08:55:56.563Z",
+    "weekly": 18551,
+    "description": "In-GUI skin center for the dsh web GUI — the single skin package: skins are pure asset directories (built-in plus $DSH_H"
+  },
+  {
+    "name": "@linxin666/dsh-ssh",
+    "version": "0.4.22",
+    "published": "2026-11-24T09:14:44.878Z",
+    "weekly": 17691,
+    "description": "Remote SSH operations for the dsh web GUI: host config store (~/.dsh/dsh-ssh.json, import from ~/.ssh/config), a persist"
+  },
+  {
+    "name": "@linxin666/dsh-liangshen",
+    "version": "0.4.22",
+    "published": "2026-11-24T09:15:30.085Z",
+    "weekly": 16005,
+    "description": "LiangShen (梁神) agent preset plus its composer lever for the dsh web GUI. The host half declares the bundled preset to th"
+  },
+  {
+    "name": "@wxg-prc-cpg/browser-skill-dsh-plugin",
+    "version": "0.5.0",
+    "published": "2026-11-12T16:10:55.267Z",
+    "weekly": 15548,
+    "description": "DeepSeek Harness tool plugin that exposes BrowserSkill browser automation (bsk_* tools) to the model"
+  },
+  {
+    "name": "@linxin666/dsh-client-ui-community-plugins",
+    "version": "0.4.22",
+    "published": "2026-11-24T08:54:13.400Z",
+    "weekly": 14991,
+    "description": "Community plugin index data source for the dsh web ecosystem: community.json is the single source of the Workshop store "
+  },
+  {
+    "name": "@linxin666/dsh-usage",
+    "version": "0.4.22",
+    "published": "2026-11-24T09:16:57.803Z",
+    "weekly": 14858,
+    "description": "Usage statistics plugin for the dsh web GUI: per-provider balance and coding-plan quota detection plus a live token usag"
+  },
+  {
+    "name": "@linxin666/dsh-web-all",
+    "version": "0.4.22",
+    "published": "2026-11-24T09:14:30.956Z",
+    "weekly": 14685,
+    "description": "DSH Web UI 全家桶聚合插件：一键安装全部功能插件（task-board / pet / web-ui-settings / skin-center / community-plugins / compat shim）。compat"
+  },
+  {
+    "name": "dsh-bash-terminal-ts",
+    "version": "0.9.2",
+    "published": "2026-11-24T17:09:57.327Z",
+    "weekly": 14163,
+    "description": "DSH plugin: one shell tool that runs commands through PowerShell, Git Bash, MSYS2, WSL or Niubash on Windows, plus an em"
+  },
+  {
+    "name": "@boyingliu01/dsh-plugin-xp-gate",
+    "version": "0.38.126",
+    "published": "2026-11-24T01:46:02.210Z",
+    "weekly": 14156,
+    "description": "XP-Gate deterministic quality gates + AI workflow skills as a DeepSeek Harness (DSH) native plugin: gate-check / gate-pr"
+  },
+  {
+    "name": "@linxin666/dsh-client-ui-plugin-manager",
+    "version": "0.4.22",
+    "published": "2026-11-24T09:14:01.864Z",
+    "weekly": 14085,
+    "description": "Update checking for the dsh web GUI's official Plugins page: compares installed plugins against the version their regist"
+  },
+  {
+    "name": "@linxin666/dsh-client-ui-web-ui-settings",
+    "version": "0.4.22",
+    "published": "2026-11-24T09:19:59.978Z",
+    "weekly": 14036,
+    "description": "Web UI plugin group for the dsh settings page: one first-level settings section that hosts the dsh-web family plugins' e"
+  },
+  {
+    "name": "@linxin666/dsh-client-ui-preset-center",
+    "version": "0.4.22",
+    "published": "2026-11-24T08:54:20.134Z",
+    "weekly": 13760,
+    "description": "Community agent-preset manager: the Workshop's Presets panel and the host library that installs, declares, disables and "
+  },
+  {
+    "name": "@tt-a1i/archify-dsh",
+    "version": "1.2.0",
+    "published": "2026-11-23T02:14:10.377Z",
+    "weekly": 12925,
+    "description": "Opt-in DeepSeek Harness Skill-only bundle for the Archify architecture-diagram skill."
+  },
+  {
+    "name": "@linxin666/dsh-client-ui-browser-view",
+    "version": "0.4.22",
+    "published": "2026-11-24T09:14:53.938Z",
+    "weekly": 12912,
+    "description": "Right-docked live browser view for the DSH Web GUI: a CDP-driven Chromium the agent operates, a screencast panel the use"
+  },
+  {
+    "name": "@whyshu/argent",
+    "version": "0.13.7",
+    "published": "2026-11-25T08:41:30.326Z",
+    "weekly": 11751,
+    "description": "问述科技 Argent：连接企业 ERP、提供问述模型代理与机器任务通道的 dsh 插件。"
+  },
+  {
+    "name": "dsh-plugin-updates",
+    "version": "2026.1125.27413",
+    "published": "2026-11-25T06:22:37.021Z",
+    "weekly": 11123,
+    "description": "Per-plugin update notes for the DeepSeek Harness plugin catalog (13135 entries) · 插件更新说明数据"
+  },
+  {
+    "name": "@linxin666/dsh-client-ui-git-graph",
+    "version": "0.4.14",
+    "published": "2026-11-02T09:44:11.546Z",
+    "weekly": 11012,
+    "description": "External dsh web GUI plugin: a blank-session git branch selector + Git graph, with real host-side git operations and gua"
+  },
+  {
+    "name": "@argszero/cordis-plugin-thinking-loop-guard",
+    "version": "0.3.1",
+    "published": "2026-10-14T13:45:33.776Z",
+    "weekly": 10175,
+    "description": "Thinking-loop guard for dsh: observes the llm/stream waterfall and breaks a model that degrades into a loop. Detects thr"
+  },
+  {
+    "name": "dsh-plugin",
+    "version": "2.4.3",
+    "published": "2026-11-21T13:38:16.082Z",
+    "weekly": 9935,
+    "description": "A community plugin marketplace for DeepSeek Harness, built to the official plugin spec — browse, search and install 6000"
+  },
+  {
+    "name": "@openviking/dsh-memory-plugin",
+    "version": "0.5.41",
+    "published": "2026-11-25T07:33:56.432Z",
+    "weekly": 8983,
+    "description": "OpenViking memory and context bundle for DeepSeek Harness"
+  },
+  {
+    "name": "dsh-plugin-health",
+    "version": "3.3.0",
+    "published": "2026-11-19T04:17:37.230Z",
+    "weekly": 8900,
+    "description": "Diagnoses DSH plugin installation, compatibility and observed loading problems. Offers repair previews, trusted-plugin s"
+  },
+  {
+    "name": "dsh-fish-soul",
+    "version": "0.18.25",
+    "published": "2026-11-25T07:28:17.709Z",
+    "weekly": 8380,
+    "description": "鱼 · 人格、按人记忆（可纠正、有印象、能导入旧聊天记录）、日程自走与主动开口，直连 SnowLuma 收发 QQ（群里会自己插话），B站 / 抖音小号私信与自己刷视频；按功能选模型并统计用量花费，能听会说 QQ 语音、收藏表情包、学群里的"
+  },
+  {
+    "name": "awesome-dsh-plugin-feed",
+    "version": "0.20261125.6",
+    "published": "2026-11-25T11:16:16.543Z",
+    "weekly": 8377,
+    "description": "DSH plugin market catalog — every reviewed repository with its install status, the published subscription, and the packa"
+  },
+  {
+    "name": "dsh-m",
+    "version": "0.12.25",
+    "published": "2026-11-25T11:06:10.608Z",
+    "weekly": 8337,
+    "description": "自定义清单的 DSH 插件市场：社区与精选双目录，收录/安装/卸载/升级，agent 工具与 dshm CLI，支持 web 与 desktop。"
+  },
+  {
+    "name": "dsh-plugin-memory",
+    "version": "0.21.0",
+    "published": "2026-11-24T02:30:28.786Z",
+    "weekly": 7860,
+    "description": "Long-term memory plugin for DeepSeek Harness: persistent cross-session markdown memory with a soul/persona file, auto-in"
+  },
+  {
+    "name": "dsh-plugin-opc",
+    "version": "0.1.65",
+    "published": "2026-11-25T10:18:37.299Z",
+    "weekly": 7529,
+    "description": "OPC Enterprise Plugin for DeepSeek Harness (DSH)"
+  },
+  {
+    "name": "dsh-plugin-guide",
+    "version": "0.5.12",
+    "published": "2026-11-23T05:13:36.405Z",
+    "weekly": 7278,
+    "description": "A practical guide to DSH plugin quality: ENTRY checks, FLOW checks, and BOOST guidance. Community guide; not official, n"
+  },
+  {
+    "name": "@kangyishuai/dsh-plugin-index",
+    "version": "0.0.45030568318",
+    "published": "2026-11-22T14:07:19.727Z",
+    "weekly": 6847,
+    "description": "DSH plugin market index (format 1) for the @kangyishuai/dsh-* plugins: one JSON file, no code."
+  },
+  {
+    "name": "dsh-bili-scroll",
+    "version": "2.5.3",
+    "published": "2026-11-23T10:17:37.452Z",
+    "weekly": 6528,
+    "description": "DSH 插件：每天替你刷一轮 B站 —— 读字幕挑出值得的、写一份日报，值得的就 @ 你"
+  },
+  {
+    "name": "dsh-session-manager",
+    "version": "0.7.11",
+    "published": "2026-11-20T15:32:28.042Z",
+    "weekly": 6230,
+    "description": "DeepSeek Harness session and workspace manager —— Workspaces: archive and visibility. Sessions: move, migrate presets, d"
+  },
+  {
+    "name": "dsh-builtin-browser",
+    "version": "1.0.1",
+    "published": "2026-11-22T23:46:09.751Z",
+    "weekly": 6082,
+    "description": "Sidebar browser for DeepSeek Harness with navigation, structured references and dsh_browser_* tools. Browser tools requi"
+  },
+  {
+    "name": "dsh-plugin-core",
+    "version": "0.46.11",
+    "published": "2026-11-25T09:12:44.171Z",
+    "weekly": 5956,
+    "description": "Shared base for DSH plugins: design tokens, UI controls, utils, workspace explorer, session preview"
+  },
+  {
+    "name": "dsh-market-pro",
+    "version": "1.15.4",
+    "published": "2026-11-25T08:56:12.660Z",
+    "weekly": 5872,
+    "description": "DSH 插件市场Pro — AI-native plugin, Agent skills & MCP marketplace for DeepSeek Harness (DSH) with 29,000+ plugins, 100 cura"
+  },
+  {
+    "name": "dsh-config-manager",
+    "version": "0.12.0",
+    "published": "2026-11-21T22:08:05.385Z",
+    "weekly": 5822,
+    "description": "Backup, restore, export, import, migrate and sync your DeepSeek Harness (DSH) configuration: settings, plugins, MCP serv"
+  },
+  {
+    "name": "@twinsearth/ai-prison-dsh-plugin",
+    "version": "1.9.2",
+    "published": "2026-11-25T09:39:41.480Z",
+    "weekly": 5642,
+    "description": "AI Prison for DSH: eight governance tools wrapping the aiprison CLI (levels, status, watchdog status, demo, drill, inspe"
+  },
+  {
+    "name": "dsh-inbox-bridge",
+    "version": "2.25.0",
+    "published": "2026-11-21T09:46:07.171Z",
+    "weekly": 5552,
+    "description": "DSH 插件：让每个会话自己盯 GitHub——它提的 PR 被评审、CI 挂了、派给它的 issue 有人回，下一轮自动进上下文，空闲时还能自己开一轮。只读，不改仓库。"
+  },
+  {
+    "name": "dsh-plugin-core-demo",
+    "version": "0.46.11",
+    "published": "2026-11-25T09:14:16.256Z",
+    "weekly": 5416,
+    "description": "The shared UI foundation for DSH plugins, with a live component preview: design tokens, common controls, workspace brows"
+  },
+  {
+    "name": "dsh-speak-up",
+    "version": "0.3.4",
+    "published": "2026-11-23T05:35:01.025Z",
+    "weekly": 5316,
+    "description": "主动搭话（dsh-speak-up）：DSH 插件。没人在跟她说话的时候，她也会自己起个话头 —— 按你设的间隔掷一次本地骰子（不花模型），掷中了就走 DSH 自己的一轮（人格、历史、工具、记忆全都是她自己的）。"
+  },
+  {
+    "name": "dsh-plugin-subscriptions",
+    "version": "0.9.15",
+    "published": "2026-11-23T16:57:02.368Z",
+    "weekly": 5255,
+    "description": "Use ChatGPT (Codex), Claude, Grok (X Premium), GitHub Copilot, and Google Antigravity subscriptions as DeepSeek Harness "
+  },
+  {
+    "name": "dsh-claude-data",
+    "version": "2.16.0",
+    "published": "2026-11-13T08:08:12.473Z",
+    "weekly": 4917,
+    "description": "DeepSeek Harness plugin: the claude-data skill from baoyu-design. The agent builds data-backed dashboards as files and o"
+  },
+  {
+    "name": "dsh-plugin-toolkit",
+    "version": "0.22.1",
+    "published": "2026-11-24T20:56:13.970Z",
+    "weekly": 4784,
+    "description": "Preflight, release and test DeepSeek Harness plugins: check a folder or any GitHub repository, wait for npm to actually "
+  },
+  {
+    "name": "dsh-claude-design",
+    "version": "2.16.0",
+    "published": "2026-11-13T08:11:25.370Z",
+    "weekly": 4467,
+    "description": "DeepSeek Harness plugin: the claude-design skill from baoyu-design. The agent writes canvases of artboards as files and "
+  },
+  {
+    "name": "dsh-claude-slides",
+    "version": "2.16.0",
+    "published": "2026-11-13T08:10:37.953Z",
+    "weekly": 4422,
+    "description": "DeepSeek Harness plugin: the claude-slides skill from baoyu-design. The agent writes editable slide decks as files and o"
+  },
+  {
+    "name": "@noob-stupid/dsh-plugin-console",
+    "version": "0.5.115",
+    "published": "2026-11-20T16:18:19.581Z",
+    "weekly": 4344,
+    "description": "DSH 框架升级安全与插件升级门控：一键升级、失败自动回滚、升级后回滚上版、旧插件不适配自动禁用；内置多源插件市场为发现层，插件源全部可自定义，可指向公司内网私有源 / 私有索引 / 本地 Git 仓库，纯内网离线可用 | Framewor"
+  },
+  {
+    "name": "@huaqiu/dsh-plugin-log",
+    "version": "0.7.18",
+    "published": "2026-11-25T08:51:17.777Z",
+    "weekly": 4280,
+    "description": ""
+  },
+  {
+    "name": "@ruoyang/dsh-plugin-deepseek-balance",
+    "version": "1.0.2",
+    "published": "2026-09-27T18:15:46.517Z",
+    "weekly": 4255,
+    "description": "Floating DeepSeek API balance badge for the DeepSeek Harness Web UI, backed by the harness's own DEEPSEEK_API_KEY creden"
+  },
+  {
+    "name": "dsh-claude-whiteboard",
+    "version": "2.16.0",
+    "published": "2026-11-13T08:09:41.790Z",
+    "weekly": 4214,
+    "description": "DeepSeek Harness plugin: the claude-whiteboard skill from baoyu-design. The agent lays out diagrams, flows, maps of idea"
+  },
+  {
+    "name": "dsh-claude-design-system",
+    "version": "2.16.0",
+    "published": "2026-11-13T08:10:18.540Z",
+    "weekly": 4107,
+    "description": "DeepSeek Harness plugin: the claude-design-system skill from baoyu-design. The agent writes design systems (tokens, type"
+  },
+  {
+    "name": "dsh-claude-motion",
+    "version": "2.16.0",
+    "published": "2026-11-13T08:09:30.100Z",
+    "weekly": 3746,
+    "description": "DeepSeek Harness plugin: the claude-motion skill from baoyu-design. The agent writes short animated films as code, scene"
+  },
+  {
+    "name": "davinci-console-demo",
+    "version": "0.14.1",
+    "published": "2026-11-22T20:59:41.108Z",
+    "weekly": 3695,
+    "description": "[DEMO] dsh-davinci-console-demo（npm: davinci-console-demo）— 视觉驱动的 Vibe Color：DeepSeek-V4.1-Flash 多帧理解、V-Log 技术转换、独立风格节点、"
+  },
+  {
+    "name": "dsh-plugin-chatgpt",
+    "version": "0.1.24",
+    "published": "2026-11-23T11:53:32.628Z",
+    "weekly": 3551,
+    "description": "Sign in with ChatGPT inside DeepSeek Harness, and use your ChatGPT subscription to serve models."
+  },
+  {
+    "name": "dsh-providers-hub",
+    "version": "2.36.261125",
+    "published": "2026-11-25T08:23:33.919Z",
+    "weekly": 3381,
+    "description": "DeepSeek Harness plugin: one hub for AI coding providers — account login, multi-account pools, silent credential refresh"
+  },
+  {
+    "name": "@twinsearth/fang-dsh-plugin",
+    "version": "3.8.4",
+    "published": "2026-11-25T07:43:40.179Z",
+    "weekly": 3343,
+    "description": "dsh-Fang (瓮城) — mother/fork plugin development environment for DeepSeek Harness: one readonly mother, a disposable child"
+  },
+  {
+    "name": "@anysearch/anysearch-dsh",
+    "version": "0.1.8",
+    "published": "2026-10-10T08:56:08.514Z",
+    "weekly": 3318,
+    "description": "AnySearch web search and fetch providers plus advanced tools for DeepSeek Harness"
+  },
+  {
+    "name": "@agentic-kit/dsh",
+    "version": "0.9.50",
+    "published": "2026-11-24T02:01:10.402Z",
+    "weekly": 3304,
+    "description": "the DeepSeek Harness adapter for agentic-kit — Constructive's typed db tools and confirm gate as a dsh plugin, plus a ds"
+  },
+  {
+    "name": "@huanlin/dsh-plugin-better-locale",
+    "version": "0.4.3",
+    "published": "2026-09-11T10:28:25.619Z",
+    "weekly": 3182,
+    "description": "DSH web 插件：通过 DSH v0.1.5-rc.1 原生第三方语言 API（locale.addLanguage + register(ns, locale, dict)）注册 19 种内置语言字典（ja/ko/fr/...），语言"
+  },
+  {
+    "name": "dsh-bili-subagent",
+    "version": "1.0.4",
+    "published": "2026-11-18T11:30:04.748Z",
+    "weekly": 3130,
+    "description": "DSH 插件：让你的 AI 伙伴派子代理去刷 B站 —— 子代理读字幕挑出值得的、把详细内容汇报回来，伙伴再用自己的口吻发私信 / 评论 @ 你"
+  },
+  {
+    "name": "@memef1f1y/dsh-plugin-tts",
+    "version": "0.8.1",
+    "published": "2026-11-25T02:09:05.831Z",
+    "weekly": 3048,
+    "description": "Edge TTS 语音大集成插件：消息朗读按钮、自动朗读开关、语音设置面板（Edge TTS / RVC / Index-TTS2 / CosyVoice / GPT-SoVITS / Google Cloud TTS）"
+  },
+  {
+    "name": "dsh-plugin-panel",
+    "version": "0.1.18",
+    "published": "2026-11-19T03:48:49.195Z",
+    "weekly": 3044,
+    "description": "Plugin manager for the DeepSeek Harness right sidebar: list installed plugins, see where each one lives, pin favourites,"
+  },
+  {
+    "name": "dsh-plugin-shop-catalog",
+    "version": "2026.1125.0",
+    "published": "2026-11-25T11:27:21.784Z",
+    "weekly": 3025,
+    "description": "The dsh plugin catalog, as published by dsh-plugin-shop."
+  },
+  {
+    "name": "@xixka/dsh-hub",
+    "version": "0.4.24",
+    "published": "2026-11-22T06:36:41.683Z",
+    "weekly": 3017,
+    "description": "DeepSeek Harness plugin: one hub for AI coding providers — account login, multi-account pools, silent credential refresh"
+  },
+  {
+    "name": "dsh-ide-git",
+    "version": "0.36.0",
+    "published": "2026-11-20T17:58:19.812Z",
+    "weekly": 2836,
+    "description": "DSH plugin: an IDE-grade Git tool window as a native dsh-better-sidebar tab — branch tree, commit graph, changes, commit"
+  },
+  {
+    "name": "dsh-claude-dashboard",
+    "version": "2.16.0",
+    "published": "2026-11-13T08:06:14.930Z",
+    "weekly": 2774,
+    "description": "DeepSeek Harness plugin: renamed dsh-claude-data. This release has no skill: it brings the Artifacts page that offers th"
+  },
+  {
+    "name": "dsh-workspace-api-key",
+    "version": "0.3.1",
+    "published": "2026-11-12T16:07:56.070Z",
+    "weekly": 2773,
+    "description": "A DeepSeek Harness plugin that binds a separate DeepSeek API key to each workspace, or to a single session, so the spend"
+  },
+  {
+    "name": "@twinsearth/w2m-dsh-plugin",
+    "version": "3.7.3",
+    "published": "2026-11-25T10:17:42.377Z",
+    "weekly": 2699,
+    "description": "Run one project across your own Windows and macOS machines from a single DeepSeek account, through 37 tools (18 fleet to"
+  },
+  {
+    "name": "@huaqiu/dsh-tool-pcb-viewer",
+    "version": "0.7.18",
+    "published": "2026-11-25T08:54:41.236Z",
+    "weekly": 2646,
+    "description": "KiCad .kicad_pcb → interactive 2D-layout + 3D board viewer DSH plugin: a pcb_preview tool, an in-conversation turn-tail "
+  },
+  {
+    "name": "dsh-plugin-whale-pet",
+    "version": "0.2.9",
+    "published": "2026-09-29T07:58:31.320Z",
+    "weekly": 2491,
+    "description": "Your little whale buddy for work, wins, and well-earned naps."
+  },
+  {
+    "name": "dsh-plugin-dingtalk-bridge",
+    "version": "0.4.7",
+    "published": "2026-11-25T05:47:51.361Z",
+    "weekly": 2474,
+    "description": "钉钉私信 / 群 @ 消息实时接收、按发送人记录来源、AI 建议回复与自动回复插件"
+  },
+  {
+    "name": "dsh-plugin-rea",
+    "version": "2.0.18",
+    "published": "2026-11-13T12:42:06.136Z",
+    "weekly": 2472,
+    "description": "One-plugin bundle: provisions Node/REA/JDK/Ghidra for you, then registers the upstream REA MCP server as mcp__rea__* too"
+  },
+  {
+    "name": "dsh-plugin-trim",
+    "version": "0.5.9",
+    "published": "2026-11-22T04:30:23.549Z",
+    "weekly": 2467,
+    "description": "DSH plugin checkup and compatibility analyzer"
+  },
+  {
+    "name": "dsh-plugin-zotero",
+    "version": "1.5.3",
+    "published": "2026-11-25T07:56:43.162Z",
+    "weekly": 2455,
+    "description": "Map your Zotero library into DSH: let AI operate Zotero for you and help you read papers. Browse collections and tags in"
+  },
+  {
+    "name": "dsh-plugin-save-token",
+    "version": "2.4.1",
+    "published": "2026-09-04T01:29:55.343Z",
+    "weekly": 2443,
+    "description": "Cut token cost without cutting model intelligence — a DeepSeek Harness (dsh) bundle plugin: structure-aware compression "
+  },
+  {
+    "name": "@holo-max/dsh-market-index",
+    "version": "1.3.0",
+    "published": "2026-11-19T07:35:25.358Z",
+    "weekly": 2310,
+    "description": "DSH plugin market index (format 1) for dsh-server-deploy and dsh-sitmax, served over jsDelivr."
+  },
+  {
+    "name": "dsh-plugin-chuhai",
+    "version": "0.3.5",
+    "published": "2026-11-19T12:05:47.888Z",
+    "weekly": 2252,
+    "description": "自媒体出海 for DeepSeek Harness — 说一句「自媒体出海」，DSH 从零带你做到海外平台：写作人格、内容源、知识库、出文章、公众号走通，再到 X 开蓝 V、用上 Grok Bot。前半段的书随插件带着，能单独用；iLan"
+  },
+  {
+    "name": "@oh-story/dsh",
+    "version": "0.1.27",
+    "published": "2026-11-17T19:20:34.371Z",
+    "weekly": 2137,
+    "description": "A DSH plugin for fiction, short-drama, interactive-game, and video-recap production"
+  },
+  {
+    "name": "@fractalsynapse/dsh-chapters",
+    "version": "0.2.50",
+    "published": "2026-11-24T14:56:46.609Z",
+    "weekly": 2103,
+    "description": "dsh plugin: verbatim chapter archive + zero-token index for small-context models"
+  },
+  {
+    "name": "dsh-autorestart",
+    "version": "1.0.0",
+    "published": "2026-11-25T04:19:00.658Z",
+    "weekly": 2101,
+    "description": "DSH plugin: restarts DeepSeek Harness only when every session is idle, holds questions while you are away, and resumes t"
+  },
+  {
+    "name": "dsh-claude-artifacts",
+    "version": "2.16.0",
+    "published": "2026-11-13T08:07:30.603Z",
+    "weekly": 2013,
+    "description": "DeepSeek Harness plugin: What the baoyu-design plugins share: the Artifacts page in the sidebar, and comments from their"
+  },
+  {
+    "name": "dsh-diff-approval",
+    "version": "0.37.5",
+    "published": "2026-11-12T16:42:09.127Z",
+    "weekly": 2000,
+    "description": "DeepSeek Harness plugin: pending-edit review with whole-file diff and Keep/Revert"
+  },
+  {
+    "name": "@dsh-electron/dsh-plugin-multi-root-workspace",
+    "version": "0.1.24",
+    "published": "2026-11-24T14:24:05.099Z",
+    "weekly": 1886,
+    "description": "Multi-root Workspace for DeepSeek Harness: adds N additional roots to the workspace sandbox scope as an out-of-tree bund"
+  },
+  {
+    "name": "dsh-plugin-upgrader",
+    "version": "1.9.3",
+    "published": "2026-11-20T07:12:03.619Z",
+    "weekly": 1872,
+    "description": "DSH plugin for DeepSeek Harness: upgrade plugins from the Plugins page, version history, rollback, live pnpm progress. T"
+  },
+  {
+    "name": "dsh-plugin-mobile-gateway",
+    "version": "0.12.4",
+    "published": "2026-11-23T14:14:24.845Z",
+    "weekly": 1871,
+    "description": "Whaleness 移动网关，连接 DeepSeek Harness 与移动设备，支持安全配对、实时会话同步、智能体团队与子会话、插件管理、官方语音输入及文件传输，提供局域网、Tailscale 和 Cloudflare Tunnel 连接"
+  },
+  {
+    "name": "@dsh-enhanced/assistant-deepseek-budget",
+    "version": "0.1.84",
+    "published": "2026-11-25T03:31:21.580Z",
+    "weekly": 1866,
+    "description": "A DeepSeek Harness plugin for Assistant Deepseek Budget."
+  },
+  {
+    "name": "@dsh-agentic-roleplay/state",
+    "version": "0.14.0",
+    "published": "2026-11-24T21:07:08.237Z",
+    "weekly": 1850,
+    "description": "DSH plugin for roleplay session state: one SQLite database per session, exposed to other plugins as a service over canon"
+  },
+  {
+    "name": "@jayyuen66/dsh-plugin-shared",
+    "version": "0.2.13",
+    "published": "2026-11-23T15:47:09.739Z",
+    "weekly": 1842,
+    "description": "dsh 自研插件的共享工具库：tool 事件流记账扫描 + 卡片 apply/差异骨架 + 统一设置卡 UI 组件 + 官方作业结局映射 + 项目键派生 + 代理对安全截断。宿主半由各插件 import；客户端半以 ./client 共享行"
+  },
+  {
+    "name": "@xbzbing/dsh-git-panel",
+    "version": "1.16.1",
+    "published": "2026-11-24T11:11:52.595Z",
+    "weekly": 1841,
+    "description": "DeepSeek Harness (dsh) plugin: an IDE-style Git panel in the Web GUI — branch/history overview, uncommitted changes with"
+  },
+  {
+    "name": "@dsh-enhanced/assistant-policy",
+    "version": "0.1.84",
+    "published": "2026-11-25T03:30:56.273Z",
+    "weekly": 1840,
+    "description": "A DeepSeek Harness plugin for Assistant Policy."
+  },
+  {
+    "name": "dsh-team-pulse",
+    "version": "1.3.2",
+    "published": "2026-11-23T07:49:49.120Z",
+    "weekly": 1830,
+    "description": "Team Pulse — 团队研发进度看板 DSH 插件：任务看板 / 项目看板 / 用户管理 / 新任务提醒与每日推送 / 对话绑定项目；Host 半提供 Agent 工具（git、任务、对话归档）。"
+  },
+  {
+    "name": "@sparkelf/dsh-plugin-backup",
+    "version": "0.2.9-alpha.91",
+    "published": "2026-11-16T20:41:58.510Z",
+    "weekly": 1823,
+    "description": "Full-stack Plus user-data Backup plugin with streamed Host archive routes and Settings UI"
+  },
+  {
+    "name": "dsh-find-plugin",
+    "version": "0.4.0",
+    "published": "2026-09-25T14:59:44.271Z",
+    "weekly": 1813,
+    "description": "Find DeepSeek Harness plugins inside the agent — live GitHub dsh-plugin topic search, ranked by stars."
+  },
+  {
+    "name": "dsh-pick",
+    "version": "0.7.8",
+    "published": "2026-11-25T03:34:45.625Z",
+    "weekly": 1809,
+    "description": "DSH 插件选型助手：几个插件市场和 npm 的 3 万多个插件合成一个榜，去噪排名、AI 精选、一键安装；插件作者可领 README 排名徽章。"
+  },
+  {
+    "name": "dsh-magpie-route",
+    "version": "1.6.2",
+    "published": "2026-11-23T08:22:19.114Z",
+    "weekly": 1797,
+    "description": "DeepSeek Harness plugin: show the real upstream model behind a magpie routing group directly below the composer."
+  },
+  {
+    "name": "@wenaixi/dsh-ponytail",
+    "version": "5.6.7",
+    "published": "2026-11-25T06:30:13.905Z",
+    "weekly": 1793,
+    "description": "DeepSeek Harness plugin: DietrichGebert/ponytail lazy senior mode & 7-rung ladder port, 6 skills with bilingual descript"
+  },
+  {
+    "name": "dsh-plugin-smooth-stream",
+    "version": "1.6.7",
+    "published": "2026-11-22T11:54:48.027Z",
+    "weekly": 1785,
+    "description": "DeepSeek Harness plugin: paragraph-batched streaming reveals with 8 designed animations, smooth scroll-follow and a sett"
+  },
+  {
+    "name": "dsh-plugin-weixin",
+    "version": "1.5.14",
+    "published": "2026-11-23T11:16:59.550Z",
+    "weekly": 1774,
+    "description": "Weixin (personal WeChat, iLink Bot API) channel plugin for DeepSeek Harness — command a DSH agent from WeChat, with imag"
+  },
+  {
+    "name": "@dsh-enhanced/hello",
+    "version": "0.1.84",
+    "published": "2026-11-25T03:30:26.840Z",
+    "weekly": 1767,
+    "description": "A minimal installable DeepSeek Harness plugin bundle."
+  },
+  {
+    "name": "dsh-plugin-tower",
+    "version": "0.11.0",
+    "published": "2026-11-22T07:52:33.996Z",
+    "weekly": 1763,
+    "description": "Tower: a local control tower for live agents in the right sidebar — goals, background jobs, schedules and the interventi"
+  },
+  {
+    "name": "@dsh-enhanced/owner-console",
+    "version": "0.1.84",
+    "published": "2026-11-25T03:31:03.773Z",
+    "weekly": 1753,
+    "description": "A DeepSeek Harness plugin for Owner Console."
+  },
+  {
+    "name": "@dsh-plugin/dsh-ui-components",
+    "version": "0.0.1",
+    "published": "2026-11-14T15:55:58.121Z",
+    "weekly": 1737,
+    "description": "React component library that restyles Arco Design with dsh (DeepSeek Harness) design tokens, and exposes the full IconPa"
+  },
+  {
+    "name": "dsh-db-mcp",
+    "version": "1.0.0",
+    "published": "2026-11-19T15:20:13.775Z",
+    "weekly": 1733,
+    "description": "DSH plugin: import the connections DBeaver already knows (saved passwords included), query them through nine MCP tools a"
+  },
+  {
+    "name": "@tinyforge/dsh-plugin-manager-wj",
+    "version": "1.7.3",
+    "published": "2026-11-21T14:32:19.832Z",
+    "weekly": 1729,
+    "description": "Plugin health, configuration provenance, skill catalog and tool-ownership views for DeepSeek Harness; MCP server managem"
+  },
+  {
+    "name": "dsh-plugin-image-workbench",
+    "version": "1.1.56",
+    "published": "2026-11-18T04:43:55.611Z",
+    "weekly": 1705,
+    "description": "Bluxe手绘工坊 · 生图工作台（图文 / 摄影）：DSH 侧栏图像生成工作台，默认使用内置本地账号池，亦支持任意 OpenAI 兼容接口（Base URL / API Key / 模型）；可自定义工作台名称与图片存储目录。"
+  },
+  {
+    "name": "dsh-plugin-tether",
+    "version": "0.1.34",
+    "published": "2026-11-18T13:32:25.627Z",
+    "weekly": 1689,
+    "description": "Mobile client for the DeepSeek Harness — use the dsh on your dev machine from your Android or iOS phone, remotely across"
+  },
+  {
+    "name": "@dsh-enhanced/assistant-web-owner",
+    "version": "0.1.84",
+    "published": "2026-11-25T03:32:45.762Z",
+    "weekly": 1686,
+    "description": "A DeepSeek Harness plugin for Assistant Web Owner."
+  },
+  {
+    "name": "dsh-plugin-update",
+    "version": "0.18.39",
+    "published": "2026-10-23T16:55:48.267Z",
+    "weekly": 1682,
+    "description": "给 DSH 插件加「检查更新 / 安装更新」能力的 npm 包：宿主一段接线 + 面板一个现成组件，查新版、装更新、失败兜底、更新日志与多插件日志一次包掉"
+  },
+  {
+    "name": "@ace-zone/dsh-market",
+    "version": "0.1.67",
+    "published": "2026-10-29T07:38:42.007Z",
+    "weekly": 1676,
+    "description": "DSH 社区插件市场：设置内「插件市场」入口 + 卡片弹窗 + 一键安装/卸载/管理（bundle 走 dsh plugin add，pack 走 zip 落盘）"
+  },
+  {
+    "name": "dsh-capdiff",
+    "version": "0.2.5",
+    "published": "2026-11-20T14:20:18.643Z",
+    "weekly": 1662,
+    "description": "Static capability diff scanner for DSH plugin manifests: declared dsh.capabilities vs imports and eval/env use found in "
+  },
+  {
+    "name": "dsh-revive-love",
+    "version": "1.5.4",
+    "published": "2026-11-24T15:19:49.187Z",
+    "weekly": 1659,
+    "description": "Unofficial third-party DSH plugin: revive an over-long DeepSeek chat export by importing only its most recent turns."
+  },
+  {
+    "name": "@lingda-ai/dsh-plugin-ledger",
+    "version": "0.1.17",
+    "published": "2026-11-22T02:00:36.921Z",
+    "weekly": 1657,
+    "description": "DSH 插件搜索入口：运行时账本（成本/用量观测）。自包含单包，不依赖其他 npm 包，便于从镜像源安装。"
+  },
+  {
+    "name": "dsh-plugin-marketplace",
+    "version": "0.5.10",
+    "published": "2026-11-15T03:12:19.853Z",
+    "weekly": 1656,
+    "description": "Discover, install, update and uninstall plugins in the active DSH Desktop or Web profile."
+  },
+  {
+    "name": "dsh-plugin-yushe",
+    "version": "0.55.0",
+    "published": "2026-11-21T04:29:43.470Z",
+    "weekly": 1640,
+    "description": "鱼社 · 大肥鱼虚拟养成系统：点几下就能养一条自己的大肥鱼。可视化引导一键上手，她陪你聊天、替你干活、自己去 B站学习长大，每天写日记汇报，还会写信、拍照片回来给你看"
+  },
+  {
+    "name": "@dsh-enhanced/assistant-dreaming",
+    "version": "0.1.84",
+    "published": "2026-11-25T03:31:48.654Z",
+    "weekly": 1630,
+    "description": "A DeepSeek Harness plugin for Assistant Dreaming."
+  },
+  {
+    "name": "@oxmumu3/dsh-plugin-finder",
+    "version": "0.13.8",
+    "published": "2026-11-23T02:36:20.250Z",
+    "weekly": 1629,
+    "description": "Describe a need, find a usable plan, and run or create in the same DeepSeek Harness workspace"
+  },
+  {
+    "name": "@polza-ai/dsh-plugin-polza",
+    "version": "0.3.5",
+    "published": "2026-11-22T20:33:27.673Z",
+    "weekly": 1618,
+    "description": "Polza.ai — российский LLM-агрегатор как провайдер моделей DeepSeek Harness"
+  },
+  {
+    "name": "dsh-plugin-reverse-proxy",
+    "version": "0.8.3",
+    "published": "2026-11-24T10:18:23.233Z",
+    "weekly": 1610,
+    "description": "DSH Web 局域网/公网访问插件：内置反向代理 + 免 Token 登录，手机同 Wi-Fi 直接打开后台；公网访问需开关 + 访问密钥（地址变成 /密钥，密钥可一键随机生成）；可选 IPv6 监听；端口可改，带访问 IP 黑名单与一键"
+  },
+  {
+    "name": "@kutebai/dsh-keelwatch",
+    "version": "0.4.3",
+    "published": "2026-11-12T04:54:54.534Z",
+    "weekly": 1587,
+    "description": "DSH plugin ecosystem operations layer: dependency drift radar, failure brake, and token/latency attribution"
+  },
+  {
+    "name": "@hyzyn/dsh-kit",
+    "version": "0.8.1",
+    "published": "2026-11-13T12:26:24.516Z",
+    "weekly": 1575,
+    "description": "dsh-plugin-kit 插件开发工具包：宿主半体共享工具库（HTTP 围栏、托管区块、!!js 表达式、服务读取）与 definePlugin 类型助手。"
+  },
+  {
+    "name": "dsh-deepseek-web-login",
+    "version": "2.4.1",
+    "published": "2026-11-15T09:07:46.101Z",
+    "weekly": 1542,
+    "description": "Unofficial DSH plugin: use chat.deepseek.com web models as a DSH LLM provider (browser login capture + PoW solving + SSE"
+  },
+  {
+    "name": "dsh-kumquat",
+    "version": "0.1.0",
+    "published": "2026-11-21T09:31:04.415Z",
+    "weekly": 1512,
+    "description": "DSH plugin: format conversion and video-to-GIF, with built-in verification."
+  },
+  {
+    "name": "dsh-hud-capsule",
+    "version": "0.5.11",
+    "published": "2026-11-24T14:14:31.307Z",
+    "weekly": 1499,
+    "description": "Always-on desktop capsule + compact 520x720 panel for DeepSeek Harness (DSH plugin + Electron companion)"
+  },
+  {
+    "name": "dsh-plugin-prompt-tool",
+    "version": "6.3.1",
+    "published": "2026-11-22T09:02:50.531Z",
+    "weekly": 1493,
+    "description": "DSH 插件：提示词工具，规范模型的思维链与回答内容，提供 Web UI 编辑 module.yml 与 AGENTS.md，并随包分发内置技能。"
+  },
+  {
+    "name": "@opencode2dsh/dsh-plugin",
+    "version": "0.3.14",
+    "published": "2026-10-20T11:41:33.651Z",
+    "weekly": 1487,
+    "description": "Free OpenCode Zen models for DeepSeek Harness (DSH): native dsh-llm adapter plugin, no API key."
+  },
+  {
+    "name": "transproof-dsh-plugin",
+    "version": "0.1.15",
+    "published": "2026-11-19T15:35:17.469Z",
+    "weekly": 1481,
+    "description": "译校助手 TransProof 的 DeepSeek Harness 插件薄壳原型：把纯前端网页包进 DSH 页面入口 + 暴露「跑本地体检」Agent 工具。本地体检保持纯 JS 不联网。"
+  },
+  {
+    "name": "dsh-mo-image",
+    "version": "1.0.4",
+    "published": "2026-11-23T09:28:12.425Z",
+    "weekly": 1480,
+    "description": "DSH plugin: generate and edit images with model-aware prompt guidance over an OpenAI-compatible image model"
+  },
+  {
+    "name": "dsh-ds-balance",
+    "version": "3.2.2",
+    "published": "2026-11-14T07:47:47.632Z",
+    "weekly": 1476,
+    "description": "DSH plugin: shows the DeepSeek account balance at the bottom of the sidebar, with a configuration card on the Plugins pa"
+  },
+  {
+    "name": "dsh-mobile-plugin-catalog",
+    "version": "2026.1124.93",
+    "published": "2026-11-24T12:47:06.601Z",
+    "weekly": 1468,
+    "description": "The DeepSeek Harness plugin catalog (46 entries) · DeepSeek Harness 插件目录"
+  },
+  {
+    "name": "dsh-rss-news-daily",
+    "version": "1.2.0",
+    "published": "2026-11-18T17:00:25.562Z",
+    "weekly": 1465,
+    "description": "dsh plugin: daily curated RSS briefing (overall summary + top-N items), sidebar reader, preference tuning — panel/reader"
+  },
+  {
+    "name": "dsh-gsv-tts",
+    "version": "5.4.0",
+    "published": "2026-11-23T04:23:17.255Z",
+    "weekly": 1448,
+    "description": "DSH plugin for local GSV-TTS-Lite voice cloning + Edge cloud simple mode: voice presets, auto-read, engine setup assista"
+  },
+  {
+    "name": "@dsh-plugin/dsh-loader",
+    "version": "1.3.5",
+    "published": "2026-09-07T16:50:10.023Z",
+    "weekly": 1444,
+    "description": "Runtime compatibility shim for dsh (DeepSeek Harness) cordis bundle plugins: decouples third-party plugins from real dsh"
+  },
+  {
+    "name": "@xi-ix/dsh-multi-sync",
+    "version": "0.1.9",
+    "published": "2026-11-20T06:35:51.057Z",
+    "weekly": 1441,
+    "description": "Copy one machine's installed DSH plugin list to another: scan the profile, export a pinned list, then install the select"
+  },
+  {
+    "name": "dsh-dafeiyu-pet",
+    "version": "1.0.4",
+    "published": "2026-11-04T07:26:23.972Z",
+    "weekly": 1433,
+    "description": "大肥鱼桌宠：自带 104 个动作与语音的独立 DSH 插件，不依赖 dsh-dafeiyu"
+  },
+  {
+    "name": "dsh-image-pathify",
+    "version": "0.2.3",
+    "published": "2026-11-10T09:49:11.509Z",
+    "weekly": 1411,
+    "description": "DeepSeek Harness plugin: let text-only models receive pasted images, and analyze them with a built-in OpenAI-compatible "
+  },
+  {
+    "name": "dsh-feiyu-life",
+    "version": "2.6.2",
+    "published": "2026-11-18T08:39:00.489Z",
+    "weekly": 1395,
+    "description": "大肥鱼的完整人格智能体（DSH 插件）：生活、内在、长期记忆、自我叙事、关系、目标、主动性、地图与相机。"
+  },
+  {
+    "name": "dsh-gemini-multimodal",
+    "version": "0.1.16",
+    "published": "2026-11-19T02:27:38.461Z",
+    "weekly": 1378,
+    "description": "DeepSeek Harness plugin: multimodal tools (image/audio/video/document understanding, transcription, image generation) vi"
+  },
+  {
+    "name": "@dsh-plugin/dsh-shell-select",
+    "version": "1.0.0",
+    "published": "2026-11-14T08:19:06.115Z",
+    "weekly": 1375,
+    "description": "DeepSeek Harness plugin: one model-facing `shell` tool whose shell is a user setting. Resolves and validates through the"
+  },
+  {
+    "name": "dsh-plugin-wsl-env",
+    "version": "0.29.1",
+    "published": "2026-11-25T01:22:41.478Z",
+    "weekly": 1368,
+    "description": "在 WSL 的 Linux 实例中打开项目工作区，在对应 Linux 空间中进行命令执行、运行 shell 脚本和文件访问，以获得全套 Linux Shell 工具链收益，并通过 bubblewrap 对命令进行沙箱隔离"
+  },
+  {
+    "name": "dsh-plugin-message-edit",
+    "version": "1.6.5",
+    "published": "2026-11-22T12:07:11.364Z",
+    "weekly": 1365,
+    "description": "ChatGPT-style message editing for DeepSeek Harness: edit a past prompt to rewind and branch the conversation, switch ver"
+  },
+  {
+    "name": "dsh-server-deploy",
+    "version": "1.2.5",
+    "published": "2026-11-19T06:37:09.076Z",
+    "weekly": 1347,
+    "description": "DSH plugin bundle: one-shot server deploys from chat — build, upload, backup, restart and health check for single-servic"
+  },
+  {
+    "name": "@loongsuite/dsh-plugin",
+    "version": "0.1.3",
+    "published": "2026-10-12T07:40:06.357Z",
+    "weekly": 1341,
+    "description": "Standalone OpenTelemetry GenAI observability plugin for DeepSeek Harness"
+  },
+  {
+    "name": "@wenaixi/dsh-superpower",
+    "version": "8.1.3",
+    "published": "2026-11-25T06:22:25.458Z",
+    "weekly": 1318,
+    "description": "DeepSeek Harness plugin: 15 obra/superpowers engineering skills, bilingual descriptions, per-skill toggles | DeepSeek Ha"
+  },
+  {
+    "name": "@klarkxy/dsh-plugin-kit",
+    "version": "0.8.5",
+    "published": "2026-11-19T15:59:49.294Z",
+    "weekly": 1316,
+    "description": "Shared support library for klarkxy DSH plugins, providing the default auxiliary model, shared session settings, diagnost"
+  },
+  {
+    "name": "@1outres/dsh-plugin-claude-subscription",
+    "version": "0.15.0",
+    "published": "2026-11-23T12:08:43.665Z",
+    "weekly": 1310,
+    "description": "Unofficial DeepSeek Harness model provider that uses your own Claude subscription through the official Claude Code CLI. "
+  },
+  {
+    "name": "dsh-docs-deliverables-skill",
+    "version": "0.1.0",
+    "published": "2026-11-14T10:44:35.493Z",
+    "weekly": 1298,
+    "description": "Bundled DSH plugin-development knowledge skills: cross-version adaptation ledger (6 host lines), plugin dev contract, re"
+  },
+  {
+    "name": "dsh-yaoking-company-office",
+    "version": "1.3.0",
+    "published": "2026-11-23T18:21:01.451Z",
+    "weekly": 1291,
+    "description": "DeepSeek Harness (DSH) 插件：「开发团队」工作模式 —— 每个项目一个项目经理，员工是项目下的子工作区，派活即开会话，左栏可直接管理。"
+  },
+  {
+    "name": "dsh-home-hosted",
+    "version": "0.9.14",
+    "published": "2026-11-15T18:50:57.565Z",
+    "weekly": 1280,
+    "description": "DeepSeek Harness (dsh) plugin: prompt your home servers into existence through home-hosted — Gitea, Jellyfin, anything —"
+  },
+  {
+    "name": "@aiwayds/dsh-subagent-registry",
+    "version": "0.21.0",
+    "published": "2026-11-19T11:52:58.147Z",
+    "weekly": 1263,
+    "description": "dsh plugin: register locally-defined custom agents (~/.dsh/agents/*.md) as callable subagents via the use_agent tool, wi"
+  },
+  {
+    "name": "@taxueseek/argo-dsh",
+    "version": "2.17.0",
+    "published": "2026-11-21T15:45:16.709Z",
+    "weekly": 1260,
+    "description": "Argo 阿尔戈 — DSH plugin：argo 原生搜索/抓取工具 + web_search seam + wide_research 编排；自带设置页（接入/工具/API 密钥/研究/高级）；argo MCP 19 工具全量面按需挂"
+  },
+  {
+    "name": "dsh-fix",
+    "version": "0.2.0",
+    "published": "2026-08-15T01:43:44.601Z",
+    "weekly": 1254,
+    "description": "Standalone cross-platform repair tool for DeepSeek Harness (DSH): diagnose and fix startup failures caused by installed "
+  },
+  {
+    "name": "dsh-workspace-plus",
+    "version": "0.9.2",
+    "published": "2026-11-19T04:01:07.091Z",
+    "weekly": 1253,
+    "description": "DeepSeek Harness plugin with two switchable sub-features: workspace+ (label several directories inside one workspace and"
+  },
+  {
+    "name": "justskill-design",
+    "version": "3.4.0",
+    "published": "2026-11-22T06:35:14.716Z",
+    "weekly": 1248,
+    "description": "Design web pages as a validated HTML file with inline CSS. Agent edits by CLI, human edits on a local canvas, both write"
+  },
+  {
+    "name": "dsh-pisces",
+    "version": "0.3.5",
+    "published": "2026-11-15T04:48:40.613Z",
+    "weekly": 1243,
+    "description": "鱼肥生双：一只会长大的本地小鱼（DSH 插件）。事件流记忆、渐进揭开、好感、新手引导；派希丝是养成目标。"
+  },
+  {
+    "name": "@aiwayds/dsh-llm-proxy",
+    "version": "0.8.1",
+    "published": "2026-11-13T08:49:05.510Z",
+    "weekly": 1239,
+    "description": "dsh plugin: SYSTEM proxy (env) + LLM traffic-splitting proxy via a process-global undici routing dispatcher"
+  },
+  {
+    "name": "dsh-timeline",
+    "version": "0.1.14",
+    "published": "2026-11-24T17:25:24.236Z",
+    "weekly": 1225,
+    "description": "DeepSeek Harness (DSH) plugin: timeline navigation, starred folders, conversation export, prompt library, and quick note"
+  },
+  {
+    "name": "dsh-ppt-master-wrapper",
+    "version": "6.10.0-r1",
+    "published": "2026-11-19T11:47:47.321Z",
+    "weekly": 1220,
+    "description": "DeepSeek Harness plugin wrapping the upstream ppt-master skill set: byte-for-byte vendored skills, zero runtime dependen"
+  },
+  {
+    "name": "@goodandready/dsh-time-machine",
+    "version": "0.1.32",
+    "published": "2026-11-13T21:13:08.043Z",
+    "weekly": 1216,
+    "description": "DSH plugin for smart checkpoints, workspace safety guards, and instant rollback"
+  },
+  {
+    "name": "dsh-plugin-inspiration-workbench",
+    "version": "0.13.7",
+    "published": "2026-11-18T07:10:41.603Z",
+    "weekly": 1209,
+    "description": "Open many DeepSeek Harness sessions side by side as draggable, stackable cards on a free canvas."
+  },
+  {
+    "name": "dsh-arona",
+    "version": "0.1.0-alpha.3",
+    "published": "2026-11-12T12:26:51.875Z",
+    "weekly": 1206,
+    "description": "DeepSeek Harness plugin: a personal standing guard. Takes your commands from a Feishu bot, routes them to long-lived ses"
+  },
+  {
+    "name": "dsh-fishpai",
+    "version": "2.1.0",
+    "published": "2026-11-24T21:05:06.090Z",
+    "weekly": 1205,
+    "description": "DeepSeek Harness plugin: 鱼排 FishPai — WeChat Official Account typesetting and collaborative editing with a professional "
+  },
+  {
+    "name": "dsh-plugin-prompt",
+    "version": "3.8.0",
+    "published": "2026-11-24T10:54:23.177Z",
+    "weekly": 1201,
+    "description": "Scene Prompt Flow for DeepSeek Harness: 55 preset subscenes across 10 categories, a legal workflow scene, context-aware "
+  },
+  {
+    "name": "@1outres/dsh-plugin-background",
+    "version": "0.15.0",
+    "published": "2026-11-23T12:08:41.313Z",
+    "weekly": 1198,
+    "description": "Paints a background image behind the DeepSeek Harness Web UI, with panel opacity, dim and blur controls."
+  },
+  {
+    "name": "dsh-stock-analysis",
+    "version": "0.2.16",
+    "published": "2026-11-23T08:23:55.862Z",
+    "weekly": 1190,
+    "description": "DeepSeek Harness (dsh) plugin for stock analysis, screening, and strategy backtesting across A/HK/US/JP/KR/TW markets"
+  },
+  {
+    "name": "@1outres/dsh-plugin-notify",
+    "version": "0.15.0",
+    "published": "2026-11-23T12:10:27.803Z",
+    "weekly": 1189,
+    "description": "Notifies you about DeepSeek Harness approval prompts, agent questions and finished turns, in the browser and by Web Push"
+  },
+  {
+    "name": "dsh-advisor",
+    "version": "0.7.4",
+    "published": "2026-11-17T12:33:53.641Z",
+    "weekly": 1182,
+    "description": "dsh plugin bundle porting the omp advisor subsystem: a per-session reviewer model that observes the primary transcript a"
+  },
+  {
+    "name": "dsh-mcp",
+    "version": "1.15.4",
+    "published": "2026-11-21T14:13:25.663Z",
+    "weekly": 1182,
+    "description": "MCP 管理界面 + tool search：可视化配置/启停/刷新 MCP 服务器与工具勾选，按需检索（tool search）热注入；工具列表稳定命中缓存、不撑爆上下文。DeepSeek Harness plugin: MCP mana"
+  },
+  {
+    "name": "dsh-plugin-space",
+    "version": "0.1.8",
+    "published": "2026-11-25T01:02:37.136Z",
+    "weekly": 1173,
+    "description": "Write documents with your agent: it proposes edits, and you decide each one."
+  },
+  {
+    "name": "dsh-plugin-shop",
+    "version": "0.9.4",
+    "published": "2026-11-13T09:01:09.884Z",
+    "weekly": 1155,
+    "description": "Browse, install, enable, and update plugins for DeepSeek Harness."
+  },
+  {
+    "name": "dsh-thinking-lang",
+    "version": "1.0.9",
+    "published": "2026-11-20T15:18:19.804Z",
+    "weekly": 1153,
+    "description": "DSH plugin: set the agent's reasoning language (Settings → General)"
+  },
+  {
+    "name": "dsh-plugin-enhance",
+    "version": "0.1.21",
+    "published": "2026-11-23T13:54:35.240Z",
+    "weekly": 1150,
+    "description": "Improve plugin management and batch archive workspace sessions."
+  },
+  {
+    "name": "@aryacode/dsh-plugin-arya-computer-use",
+    "version": "1.0.15",
+    "published": "2026-11-23T22:35:13.087Z",
+    "weekly": 1149,
+    "description": "Computer use for DSH/AryaCode: agent-desktop UIA engine, agent-browser web lane, takeover UI with a ghost cursor"
+  },
+  {
+    "name": "@dsh-plugin/dsh-auxiliary",
+    "version": "0.6.4",
+    "published": "2026-09-06T08:11:21.121Z",
+    "weekly": 1140,
+    "description": "DeepSeek Harness plugin that uses configured model providers for image analysis and context compaction."
+  },
+  {
+    "name": "@1outres/dsh-plugin-scratchpad",
+    "version": "0.15.0",
+    "published": "2026-11-23T12:11:12.314Z",
+    "weekly": 1138,
+    "description": "Opens DeepSeek Harness sessions in new empty scratch directories, each registered as its own workspace and moved aside w"
+  },
+  {
+    "name": "dsh-install-doctor",
+    "version": "0.3.3",
+    "published": "2026-11-15T04:56:42.194Z",
+    "weekly": 1133,
+    "description": "DSH 插件装不上？先体检：读本机 DSH 版本，比对目标插件的 engines.dsh / peerDependencies，直接告诉你「这版能装、那版不能装、该装哪个」。只诊断，不安装。"
+  },
+  {
+    "name": "@goodandready/dsh-key-limits",
+    "version": "0.2.35",
+    "published": "2026-11-13T11:00:55.370Z",
+    "weekly": 1130,
+    "description": "DeepSeek Harness plugin: API key / subscription quota limits (float chip, composer bar, settings)."
+  },
+  {
+    "name": "dsh-tiered-plugin-menu",
+    "version": "1.1.6",
+    "published": "2026-11-25T02:55:01.931Z",
+    "weekly": 1122,
+    "description": "为每个工作区和会话独立配置 DSH 插件、MCP 和 Skill，支持逐级继承与插件实例隔离。"
+  },
+  {
+    "name": "dsh-plugin-tool-management",
+    "version": "0.23.0",
+    "published": "2026-11-23T12:48:24.482Z",
+    "weekly": 1120,
+    "description": "一个设置面板，统一管理 MCP、技能、记忆、子智能体、提示词和归档会话；可自定义搭配场景，一个场景即可切换整个环境；Agent也能帮你操作这个插件。"
+  },
+  {
+    "name": "dsh-tree-view",
+    "version": "1.3.1",
+    "published": "2026-11-16T12:55:26.396Z",
+    "weekly": 1112,
+    "description": "Tree-view conversation branching for DeepSeek Harness: keep one entry in the sidebar, branch and switch versions inside "
+  },
+  {
+    "name": "dsh-chrome-bridge",
+    "version": "1.20.0",
+    "published": "2026-11-20T17:49:50.701Z",
+    "weekly": 1087,
+    "description": "DSH plugin: native browser_* tools that drive the Chrome you are already using, over native messaging + CDP. No WebSocke"
+  },
+  {
+    "name": "dsh-plugin-doubao",
+    "version": "0.2.6",
+    "published": "2026-11-19T12:40:10.506Z",
+    "weekly": 1086,
+    "description": "Doubao models in DSH, self-contained: talks to doubao.com over plain HTTP and registers itself as an LLM provider. No pr"
+  },
+  {
+    "name": "@weaxs/dsh-stock-analysis",
+    "version": "0.2.16",
+    "published": "2026-11-23T08:25:52.568Z",
+    "weekly": 1070,
+    "description": "DeepSeek Harness (dsh) plugin for stock analysis, screening, and strategy backtesting across A/HK/US/JP/KR/TW markets"
+  },
+  {
+    "name": "dsh-session-delete-cascade",
+    "version": "1.2.2",
+    "published": "2026-11-16T02:18:24.076Z",
+    "weekly": 1068,
+    "description": "DeepSeek Harness plugin: delete a session from the sidebar and cascade the delete through its subagent lineage — durable"
+  },
+  {
+    "name": "dsh-message-rewind",
+    "version": "1.4.1",
+    "published": "2026-11-20T07:32:32.682Z",
+    "weekly": 1065,
+    "description": "DeepSeek Harness plugin: edit sent messages and roll back following turns, optionally restoring recorded file changes."
+  },
+  {
+    "name": "dsh-free-model",
+    "version": "3.3.2",
+    "published": "2026-11-25T06:03:29.292Z",
+    "weekly": 1062,
+    "description": "dsh 插件（DeepSeek Harness / cordis bundle）· 模型接入 —— 把 CodeArts、CodeBuddy / WorkBuddy、LobsterAI、Qoder / Qoder CN、TRAE、Cline"
+  },
+  {
+    "name": "@morehao/trendradar-contract",
+    "version": "0.8.1",
+    "published": "2026-11-16T04:37:36.569Z",
+    "weekly": 1043,
+    "description": "Language-neutral contract (JSON Schema, fixtures, generated Go & TypeScript types) shared by the trendradar Go core and "
+  },
+  {
+    "name": "dsh-plugin-startup-animation",
+    "version": "1.35.0",
+    "published": "2026-11-24T13:40:11.721Z",
+    "weekly": 1027,
+    "description": "Full-screen boot animation for DeepSeek Harness — an appearance theme and desktop pets in the same plugin. Ships built-i"
+  },
+  {
+    "name": "dsh-wb-desk",
+    "version": "0.3.0",
+    "published": "2026-11-24T06:51:51.658Z",
+    "weekly": 1020,
+    "description": "Agent 原生产物空间：分级写入（新建自动归位 / 修改待确认）+ 固定修订引用。对标 WorkBuddy 资料库的 DSH 插件。"
+  },
+  {
+    "name": "@alexsun-top/dsh-chat-room",
+    "version": "0.1.4",
+    "published": "2026-11-23T11:23:12.053Z",
+    "weekly": 1017,
+    "description": "DeepSeek Harness plugin for a central chat-room server: the room tool plus context delivery."
+  },
+  {
+    "name": "@weibaohui/dsh-plugin-kit",
+    "version": "0.5.1",
+    "published": "2026-09-28T22:49:01.617Z",
+    "weekly": 1015,
+    "description": "dsh 插件共享工具箱：AI 动作分享抽屉（ntd ActionButton 同款交互）+ 宿主任务执行器（流式执行/降级 spawn），构建期内联无运行时依赖，供系列插件复用"
+  },
+  {
+    "name": "dsh-plugin-remote-access",
+    "version": "1.6.2",
+    "published": "2026-11-13T02:25:39.094Z",
+    "weekly": 1012,
+    "description": "Expose this machine's DSH web GUI to a chosen CIDR range (e.g. Tailscale) on DSH 0.2.1+, with an optional numeric access"
+  },
+  {
+    "name": "@dsh-ai-providers/runtime",
+    "version": "0.7.5",
+    "published": "2026-11-19T23:09:23.767Z",
+    "weekly": 1010,
+    "description": "DSH plugin that selects and exposes embedding, reranking, decision, speech, and image providers."
+  },
+  {
+    "name": "dsh-snapcompact",
+    "version": "0.7.2",
+    "published": "2026-11-12T18:21:48.100Z",
+    "weekly": 1010,
+    "description": "DeepSeek Harness plugin that compacts long chats by rendering history into compact bitmap frames a vision model can read"
+  }
+]

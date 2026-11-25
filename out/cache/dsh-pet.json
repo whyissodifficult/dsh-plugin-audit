@@ -1,0 +1,67 @@
+{
+  "name": "dsh-pet",
+  "version": "0.4.9",
+  "grade": "A",
+  "score": 86,
+  "tarballBytes": 69665658,
+  "fileCount": 1207,
+  "deps": 6,
+  "license": "MIT",
+  "published": "2026-11-14T12:31:15.561Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "weak-readme",
+      "level": "low",
+      "hit": true,
+      "note": "README 289 字节"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/index.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/index.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/dist-DpF6qLoG.js 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "2 个 >2MB 的文件（assets/fonts/上首软糖体.ttf…）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup"
+  ]
+}

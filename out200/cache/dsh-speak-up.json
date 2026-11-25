@@ -1,0 +1,42 @@
+{
+  "name": "dsh-speak-up",
+  "version": "0.3.4",
+  "grade": "A",
+  "score": 96,
+  "tarballBytes": 77112,
+  "fileCount": 11,
+  "deps": 0,
+  "license": "SEE LICENSE IN LICENSE",
+  "published": "2026-11-23T05:35:01.025Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/host.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.js 里出现网络调用/硬编码域名"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "no-tests-in-package",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

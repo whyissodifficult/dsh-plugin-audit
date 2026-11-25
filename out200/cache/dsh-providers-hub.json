@@ -1,0 +1,57 @@
+{
+  "name": "dsh-providers-hub",
+  "version": "2.36.261125",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 6704670,
+  "fileCount": 1343,
+  "deps": 5,
+  "license": "MIT",
+  "published": "2026-11-25T08:23:33.919Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/account-pool.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/accio-oauth.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/accio-adapter.js 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

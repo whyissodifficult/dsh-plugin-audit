@@ -1,0 +1,52 @@
+{
+  "name": "@dsh-enhanced/hello",
+  "version": "0.1.84",
+  "grade": "A",
+  "score": 88,
+  "tarballBytes": 2580,
+  "fileCount": 12,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-25T03:30:26.840Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "weak-readme",
+      "level": "low",
+      "hit": true,
+      "note": "README 518 字节"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "no-cleanup",
+      "level": "mid",
+      "hit": true,
+      "note": "代码里没有找到卸载清理（ctx.effect/dispose）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "huge-files"
+  ]
+}

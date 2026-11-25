@@ -1,0 +1,42 @@
+{
+  "name": "dsh-arona",
+  "version": "0.1.0-alpha.3",
+  "grade": "A",
+  "score": 96,
+  "tarballBytes": 69916,
+  "fileCount": 64,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-12T12:26:51.875Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/feishu/cli.js 里调用子进程"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

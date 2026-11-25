@@ -1,0 +1,47 @@
+{
+  "name": "dsh-plugin-chatgpt",
+  "version": "0.1.24",
+  "grade": "A",
+  "score": 94,
+  "tarballBytes": 513319,
+  "fileCount": 124,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-11-23T11:53:32.628Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/api/events.js 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

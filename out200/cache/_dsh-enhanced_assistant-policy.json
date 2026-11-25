@@ -1,0 +1,52 @@
+{
+  "name": "@dsh-enhanced/assistant-policy",
+  "version": "0.1.84",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 207075,
+  "fileCount": 91,
+  "deps": 2,
+  "license": "MIT",
+  "published": "2026-11-25T03:30:56.273Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/autonomy-grants.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/profile-setup.js 里调用子进程"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

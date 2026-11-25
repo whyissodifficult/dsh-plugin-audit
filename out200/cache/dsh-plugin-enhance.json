@@ -1,0 +1,52 @@
+{
+  "name": "dsh-plugin-enhance",
+  "version": "0.1.21",
+  "grade": "C",
+  "score": 69,
+  "tarballBytes": 30057,
+  "fileCount": 23,
+  "deps": 4,
+  "license": "MIT",
+  "published": "2026-11-23T13:54:35.240Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 engine.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 github.js 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "git-deps",
+      "level": "high",
+      "hit": true,
+      "note": "含非常规依赖：dsh-plugin-enhance-workspace-archive"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "spawns-process",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

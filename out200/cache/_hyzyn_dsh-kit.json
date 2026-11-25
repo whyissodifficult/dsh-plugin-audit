@@ -1,0 +1,57 @@
+{
+  "name": "@hyzyn/dsh-kit",
+  "version": "0.8.1",
+  "grade": "A",
+  "score": 86,
+  "tarballBytes": 120933,
+  "fileCount": 48,
+  "deps": 1,
+  "license": "Apache-2.0",
+  "published": "2026-11-13T12:26:24.516Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "dsh-manifest",
+      "level": "mid",
+      "hit": true,
+      "note": "package.json 无 dsh 字段（可能不是 DSH 插件）"
+    },
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/capability.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/decode.js 里调用子进程"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

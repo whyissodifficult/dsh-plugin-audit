@@ -1,0 +1,57 @@
+{
+  "name": "@twinsearth/w2m-dsh-plugin",
+  "version": "3.7.3",
+  "grade": "C",
+  "score": 69,
+  "tarballBytes": 3046601,
+  "fileCount": 653,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-25T10:17:42.377Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/w2m-bootstrap.mjs 里出现 .dsh 路径"
+    },
+    {
+      "id": "destructive-ops",
+      "level": "high",
+      "hit": true,
+      "note": "在 deploy/server/deploy-w2m.sh 里出现破坏性命令（与其职责不符，需重点核查）"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/remote-s2-capture.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/w2m-desktop-readiness.mjs 里出现网络调用/硬编码域名"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "dsh-gsv-tts",
+  "version": "5.4.0",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 1288870,
+  "fileCount": 96,
+  "deps": 3,
+  "license": "MIT",
+  "published": "2026-11-23T04:23:17.255Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 scripts/verify-manifest.mjs 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/engine-manager.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/catalog.js 里出现网络调用/硬编码域名"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

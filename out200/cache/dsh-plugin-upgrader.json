@@ -1,0 +1,47 @@
+{
+  "name": "dsh-plugin-upgrader",
+  "version": "1.9.3",
+  "grade": "A",
+  "score": 94,
+  "tarballBytes": 203654,
+  "fileCount": 79,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-20T07:12:03.619Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.js 里出现网络调用/硬编码域名"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

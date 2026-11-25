@@ -1,0 +1,900 @@
+{
+  "@1outres/dsh-plugin-background": {
+    "repo": "1outres/my-dsh-plugins",
+    "stars": 0,
+    "openIssues": 1,
+    "lastPush": "2026-11-24T09:17:20Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@1outres/dsh-plugin-claude-subscription": {
+    "repo": "1outres/my-dsh-plugins",
+    "stars": 0,
+    "openIssues": 1,
+    "lastPush": "2026-11-24T09:17:20Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@1outres/dsh-plugin-notify": {
+    "repo": "1outres/my-dsh-plugins",
+    "stars": 0,
+    "openIssues": 1,
+    "lastPush": "2026-11-24T09:17:20Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@1outres/dsh-plugin-scratchpad": {
+    "repo": "1outres/my-dsh-plugins",
+    "stars": 0,
+    "openIssues": 1,
+    "lastPush": "2026-11-24T09:17:20Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@ace-zone/dsh-market": {
+    "repo": "losebird/dsh-plugin-market",
+    "stars": 31,
+    "openIssues": 16,
+    "lastPush": "2026-11-24T18:20:58Z",
+    "archived": false,
+    "license": null,
+    "hasCI": true,
+    "hasTests": false
+  },
+  "@agentic-kit/dsh": {
+    "repo": "constructive-io/constructive",
+    "stars": 62,
+    "openIssues": 135,
+    "lastPush": "2026-11-25T03:42:19Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": false
+  },
+  "@aiwayds/dsh-llm-proxy": {
+    "repo": "fan56/dsh-llm-proxy",
+    "stars": 0,
+    "openIssues": 0,
+    "lastPush": "2026-11-13T10:30:22Z",
+    "archived": false,
+    "license": "Apache-2.0",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@aiwayds/dsh-subagent-registry": {
+    "repo": "fan56/dsh-subagent-registry",
+    "stars": 11,
+    "openIssues": 0,
+    "lastPush": "2026-11-19T11:49:41Z",
+    "archived": false,
+    "license": "Apache-2.0",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@alexsun-top/dsh-chat-room": {
+    "repo": "agentsyaml/opencode-chat-room",
+    "stars": 3,
+    "openIssues": 0,
+    "lastPush": "2026-11-24T11:40:57Z",
+    "archived": false,
+    "license": null,
+    "hasCI": true,
+    "hasTests": false
+  },
+  "@anysearch/anysearch-dsh": {
+    "repo": "anysearch-team/anysearch-dsh",
+    "stars": 708,
+    "openIssues": 4,
+    "lastPush": "2026-10-10T08:54:47Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@argszero/cordis-plugin-thinking-loop-guard": {
+    "repo": null
+  },
+  "@aryacode/dsh-plugin-arya-computer-use": {
+    "repo": "KonnectSuite/dsh-arya-computer-use",
+    "stars": 0,
+    "openIssues": 0,
+    "lastPush": "2026-11-23T22:46:41Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": false,
+    "hasTests": false
+  },
+  "@boyingliu01/dsh-plugin-xp-gate": {
+    "repo": "boyingliu01/xp-gate",
+    "stars": 5,
+    "openIssues": 105,
+    "lastPush": "2026-11-24T17:02:27Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@dsh-agentic-roleplay/state": {
+    "repo": "Firefox2100/dsh-agentic-roleplay",
+    "stars": 3,
+    "openIssues": 0,
+    "lastPush": "2026-11-24T20:58:56Z",
+    "archived": false,
+    "license": "GPL-3.0",
+    "hasCI": true,
+    "hasTests": false
+  },
+  "@dsh-ai-providers/runtime": {
+    "repo": "Firefox2100/dsh-ai-providers",
+    "stars": 1,
+    "openIssues": 0,
+    "lastPush": "2026-11-19T23:01:13Z",
+    "archived": false,
+    "license": "GPL-3.0",
+    "hasCI": true,
+    "hasTests": false
+  },
+  "@dsh-electron/dsh-plugin-multi-root-workspace": {
+    "repo": "cherrchen/dsh-plugin-multi-root-workspace",
+    "stars": 30,
+    "openIssues": 2,
+    "lastPush": "2026-11-25T11:20:11Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@dsh-enhanced/assistant-deepseek-budget": {
+    "repo": "22-ai-00/dsh-enhanced",
+    "stars": 1,
+    "openIssues": 0,
+    "lastPush": "2026-11-25T11:46:55Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@dsh-enhanced/assistant-dreaming": {
+    "repo": "22-ai-00/dsh-enhanced",
+    "stars": 1,
+    "openIssues": 0,
+    "lastPush": "2026-11-25T11:46:55Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@dsh-enhanced/assistant-policy": {
+    "repo": "22-ai-00/dsh-enhanced",
+    "stars": 1,
+    "openIssues": 0,
+    "lastPush": "2026-11-25T11:46:55Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@dsh-enhanced/assistant-web-owner": {
+    "repo": "22-ai-00/dsh-enhanced",
+    "stars": 1,
+    "openIssues": 0,
+    "lastPush": "2026-11-25T11:46:55Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": true,
+    "hasTests": true
+  },
+  "@dsh-enhanced/hello": {
+    "repo": "22-ai-00/dsh-enhanced",
+    "stars": 1,
+    "openIssues": 0,
+    "lastPush": "2026-11-25T11:46:55Z",
+    "archived": false,
+    "license": "MIT",
+    "hasCI": false,
+    "hasTests": true
+  },
+  "@dsh-enhanced/owner-console": {
+    "repo": "22-ai-00/dsh-enhanced",
+    "error": "repo-fetch-failed"
+  },
+  "@dsh-plugin/dsh-auxiliary": {
+    "repo": "dsh-plugins/dsh-auxiliary",
+    "error": "repo-fetch-failed"
+  },
+  "@dsh-plugin/dsh-loader": {
+    "repo": "dsh-plugins/dsh-loader",
+    "error": "repo-fetch-failed"
+  },
+  "@dsh-plugin/dsh-shell-select": {
+    "repo": "dsh-plugins/dsh-shell-select",
+    "error": "repo-fetch-failed"
+  },
+  "@dsh-plugin/dsh-ui-components": {
+    "repo": "dsh-plugins/dsh-ui-components",
+    "error": "repo-fetch-failed"
+  },
+  "@fractalsynapse/dsh-chapters": {
+    "repo": "fractalsynapse/dsh-chapters",
+    "error": "repo-fetch-failed"
+  },
+  "@goodandready/dsh-key-limits": {
+    "repo": "GooDAnDReaDY/dsh-key-limits",
+    "error": "repo-fetch-failed"
+  },
+  "@goodandready/dsh-time-machine": {
+    "repo": "GooDAnDReaDY/dsh-time-machine",
+    "error": "repo-fetch-failed"
+  },
+  "@holo-max/dsh-market-index": {
+    "repo": null
+  },
+  "@huanlin/dsh-plugin-better-locale": {
+    "repo": null
+  },
+  "@huaqiu/dsh-plugin-log": {
+    "repo": null
+  },
+  "@huaqiu/dsh-tool-pcb-viewer": {
+    "repo": null
+  },
+  "@hyzyn/dsh-kit": {
+    "repo": "hyzyn/dsh-plugin-kit",
+    "error": "repo-fetch-failed"
+  },
+  "@jayyuen66/dsh-plugin-shared": {
+    "repo": "JayYuen666/dsh-plugin-shared",
+    "error": "repo-fetch-failed"
+  },
+  "@kangyishuai/dsh-plugin-index": {
+    "repo": "kangyishuai/dsh-plugins",
+    "error": "repo-fetch-failed"
+  },
+  "@klarkxy/dsh-plugin-kit": {
+    "repo": "klarkxy/dsh-plugins",
+    "error": "repo-fetch-failed"
+  },
+  "@kutebai/dsh-keelwatch": {
+    "repo": "kute/dsh-keelwatch",
+    "error": "repo-fetch-failed"
+  },
+  "@lingda-ai/dsh-plugin-ledger": {
+    "repo": null
+  },
+  "@linxin666/dsh-client-ui-browser-view": {
+    "repo": null
+  },
+  "@linxin666/dsh-client-ui-community-plugins": {
+    "repo": "zhu1090093659/dsh-community-plugins",
+    "error": "repo-fetch-failed"
+  },
+  "@linxin666/dsh-client-ui-git-graph": {
+    "repo": "zhu1090093659/dsh-web",
+    "error": "repo-fetch-failed"
+  },
+  "@linxin666/dsh-client-ui-plugin-manager": {
+    "repo": null
+  },
+  "@linxin666/dsh-client-ui-preset-center": {
+    "repo": "zhu1090093659/dsh-presets",
+    "error": "repo-fetch-failed"
+  },
+  "@linxin666/dsh-client-ui-skill-explorer": {
+    "repo": "zhu1090093659/dsh-web",
+    "error": "repo-fetch-failed"
+  },
+  "@linxin666/dsh-client-ui-skin-center": {
+    "repo": "zhu1090093659/dsh-skins",
+    "error": "repo-fetch-failed"
+  },
+  "@linxin666/dsh-client-ui-web-ui-settings": {
+    "repo": "zhu1090093659/dsh-web",
+    "error": "repo-fetch-failed"
+  },
+  "@linxin666/dsh-liangshen": {
+    "repo": "zhu1090093659/dsh-web",
+    "error": "repo-fetch-failed"
+  },
+  "@linxin666/dsh-ssh": {
+    "repo": "zhu1090093659/dsh-web",
+    "error": "repo-fetch-failed"
+  },
+  "@linxin666/dsh-usage": {
+    "repo": "zhu1090093659/dsh-web",
+    "error": "repo-fetch-failed"
+  },
+  "@linxin666/dsh-web-all": {
+    "repo": "zhu1090093659/dsh-web",
+    "error": "repo-fetch-failed"
+  },
+  "@loongsuite/dsh-plugin": {
+    "repo": "loongsuite/dsh-plugin",
+    "error": "repo-fetch-failed"
+  },
+  "@memef1f1y/dsh-plugin-tts": {
+    "repo": "1624318455/dsh-plugin-tts",
+    "error": "repo-fetch-failed"
+  },
+  "@morehao/trendradar-contract": {
+    "repo": "morehao/trendradar",
+    "error": "repo-fetch-failed"
+  },
+  "@noob-stupid/dsh-plugin-console": {
+    "repo": "Noob-stupid/dsh-plugin-gating-hub",
+    "error": "repo-fetch-failed"
+  },
+  "@oh-story/dsh": {
+    "repo": "zenstory-ai/oh-story-dsh",
+    "error": "repo-fetch-failed"
+  },
+  "@opencode2dsh/dsh-plugin": {
+    "repo": "FishBottle7/opencode2dsh",
+    "error": "repo-fetch-failed"
+  },
+  "@openviking/dsh-memory-plugin": {
+    "repo": "volcengine/OpenViking",
+    "error": "repo-fetch-failed"
+  },
+  "@oxmumu3/dsh-plugin-finder": {
+    "repo": "oxmumu3/dsh-plugin-finder",
+    "error": "repo-fetch-failed"
+  },
+  "@polza-ai/dsh-plugin-polza": {
+    "repo": "polza-ai/dsh-plugin-polza",
+    "error": "repo-fetch-failed"
+  },
+  "@ruoyang/dsh-plugin-deepseek-balance": {
+    "repo": null
+  },
+  "@sparkelf/dsh-plugin-backup": {
+    "repo": "deepseek-ai/deepseek-harness",
+    "error": "repo-fetch-failed"
+  },
+  "@stardustlc/dsh-updates": {
+    "repo": "STARDUSTLC666/dsh-suite",
+    "error": "repo-fetch-failed"
+  },
+  "@taxueseek/argo-dsh": {
+    "repo": null
+  },
+  "@tinyforge/dsh-plugin-manager-wj": {
+    "repo": "phoenixlucky/dsh-plugin-manager-wj",
+    "error": "repo-fetch-failed"
+  },
+  "@tt-a1i/archify-dsh": {
+    "repo": "tt-a1i/archify",
+    "error": "repo-fetch-failed"
+  },
+  "@twinsearth/ai-prison-dsh-plugin": {
+    "repo": "TwinsEarth/Ai-PRISON",
+    "error": "repo-fetch-failed"
+  },
+  "@twinsearth/fang-dsh-plugin": {
+    "repo": "TwinsEarth/fang-dsh-plugin",
+    "error": "repo-fetch-failed"
+  },
+  "@twinsearth/w2m-dsh-plugin": {
+    "repo": "TwinsEarth/dsh-windows2macos",
+    "error": "repo-fetch-failed"
+  },
+  "@weaxs/dsh-stock-analysis": {
+    "repo": "Weaxs/stock-analysis-plugin",
+    "error": "repo-fetch-failed"
+  },
+  "@weibaohui/dsh-plugin-kit": {
+    "repo": "weibaohui/dsh-plugin-kit",
+    "error": "repo-fetch-failed"
+  },
+  "@wenaixi/dsh-ponytail": {
+    "repo": "Wenaixi/dsh-ponytail",
+    "error": "repo-fetch-failed"
+  },
+  "@wenaixi/dsh-superpower": {
+    "repo": "Wenaixi/dsh-superpower",
+    "error": "repo-fetch-failed"
+  },
+  "@whyshu/argent": {
+    "repo": "cstcen/argent-dsh",
+    "error": "repo-fetch-failed"
+  },
+  "@wxg-prc-cpg/browser-skill-dsh-plugin": {
+    "repo": "Tencent/BrowserSkill",
+    "error": "repo-fetch-failed"
+  },
+  "@xbzbing/dsh-git-panel": {
+    "repo": "xbzbing/dsh-git-panel",
+    "error": "repo-fetch-failed"
+  },
+  "@xi-ix/dsh-multi-sync": {
+    "repo": null
+  },
+  "@xixka/dsh-hub": {
+    "repo": null
+  },
+  "@xmanrui/dsh-im": {
+    "repo": "xmanrui/dsh-im",
+    "error": "repo-fetch-failed"
+  },
+  "awesome-dsh-plugin-feed": {
+    "repo": "bruc3van/awesome-dsh-plugin-pro",
+    "error": "repo-fetch-failed"
+  },
+  "davinci-console-demo": {
+    "repo": "JiangXingchen4210/dsh-davinci-console-demo",
+    "error": "repo-fetch-failed"
+  },
+  "ds-harness-remote": {
+    "repo": "liguobao/ds-harness-remote",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-advisor": {
+    "repo": "omdsh-dev/dsh-advisor",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-arona": {
+    "repo": "dsh-labs/arona",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-autorestart": {
+    "repo": "Eason-22/dsh-autorestart",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-bash-terminal-ts": {
+    "repo": "drscrewdriver/dsh-bash-terminal-ts",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-bili-scroll": {
+    "repo": "c1overzz/dsh-bili-scroll",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-bili-subagent": {
+    "repo": "Yuuyuko-uu/dsh-bili-subagent",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-builtin-browser": {
+    "repo": "wqty123/dsh-browser",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-capdiff": {
+    "repo": "PerryLink/dsh-next-suite",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-chrome-bridge": {
+    "repo": "OrderG-X/dsh-chrome-bridge",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-claude-artifacts": {
+    "repo": "JimLiu/baoyu-design",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-claude-dashboard": {
+    "repo": "JimLiu/baoyu-design",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-claude-data": {
+    "repo": "JimLiu/baoyu-design",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-claude-design": {
+    "repo": "JimLiu/baoyu-design",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-claude-design-system": {
+    "repo": "JimLiu/baoyu-design",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-claude-motion": {
+    "repo": "JimLiu/baoyu-design",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-claude-slides": {
+    "repo": "JimLiu/baoyu-design",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-claude-whiteboard": {
+    "repo": "JimLiu/baoyu-design",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-config-manager": {
+    "repo": "xiajiajun516/dsh-config-manager",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-context": {
+    "repo": "bowenliang123/dsh-context",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-dafeiyu-pet": {
+    "repo": "lilulj/dsh-dafeiyu-pet",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-db-mcp": {
+    "repo": "halcyon6669/dsh-db-mcp",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-deepseek-web-login": {
+    "repo": "cv-superding/dsh-deepseek-web-login",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-diff-approval": {
+    "repo": "9087/dsh-diff-approval",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-docs-deliverables-skill": {
+    "repo": "drscrewdriver/dsh-docs-deliverables-skill",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-ds-balance": {
+    "repo": "dsh-plugin-lab/dsh-ds-balance",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-feiyu-life": {
+    "repo": "Vansnc/dsh-feiyu-life",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-find-plugin": {
+    "repo": "awesome-dsh-plugin/dsh-find-plugin",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-fish-soul": {
+    "repo": "Britneycode/dsh-fish-soul",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-fishpai": {
+    "repo": "OMSociety/dsh-fishpai",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-fix": {
+    "repo": "SherlockGougou/dsh-plugins-fix",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-free-model": {
+    "repo": "YpipaQ/dsh-free-model",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-gemini-multimodal": {
+    "repo": "RetiredPhysicist/dsh-plugins",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-gsv-tts": {
+    "repo": "TaoruiLiu19/dsh-gsv",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-home-hosted": {
+    "repo": "NamesMT/dsh-home-hosted",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-hud-capsule": {
+    "repo": "suianest/dsh-hud",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-ide-git": {
+    "repo": "KannaKuron/dsh-ide-git",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-image-pathify": {
+    "repo": "dami9527/dsh-image-pathify",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-inbox-bridge": {
+    "repo": "c3115644151/dsh-inbox-bridge",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-install-doctor": {
+    "repo": null
+  },
+  "dsh-kumquat": {
+    "repo": "adengou/dsh-kumquat",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-m": {
+    "repo": "iasiv5/dsh-m",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-magpie-route": {
+    "repo": "zhaochunqi/dsh-magpie-route",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-market-pro": {
+    "repo": "bruc3van/dsh-market-pro",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-mcp": {
+    "repo": "ArvinQi/dsh-mcp",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-mcp-registry": {
+    "repo": "drscrewdriver/dsh-mcp-registry",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-message-rewind": {
+    "repo": "xCube007/dsh-message-rewind",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-mo-image": {
+    "repo": "CM-Silence/dsh-mo-image",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-mobile-plugin-catalog": {
+    "repo": "WSK-build/awesome-dsh-mobile-plugins",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-pick": {
+    "repo": "AIcivilization/dsh-pick",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-pisces": {
+    "repo": "Xiaocanglan-hub/dsh-pisces",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin": {
+    "repo": "dshplugin/dsh-plugin-hub",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-catalog": {
+    "repo": "awesome-dsh-plugin/awesome-dsh-plugin",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-chatgpt": {
+    "repo": "ckanner/dsh-plugin-chatgpt",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-chuhai": {
+    "repo": "adsorgcn/dsh-plugin-chuhai",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-core": {
+    "repo": "cq-guojia/dsh-plugin-core",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-core-demo": {
+    "repo": "cq-guojia/dsh-plugin-core",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-dingtalk-bridge": {
+    "repo": "gcggcg/dsh-plugin-dingtalk-bridge",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-doubao": {
+    "repo": "woc-jpg/dsh-plugin-doubao",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-enhance": {
+    "repo": "urzz/dsh-plugin-enhance",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-guide": {
+    "repo": "PerryLink/dsh-plugin-guide",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-health": {
+    "repo": "EasonMWS/dsh-plugin-health",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-image-workbench": {
+    "repo": "guohwa/dsh-plugin-image-workbench",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-inspiration-workbench": {
+    "repo": "WilShi/dsh-plugin-inspiration-workbench",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-marketplace": {
+    "repo": "Scorp1o117/dsh-plugin-marketplace",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-memory": {
+    "repo": "LittleBlackTong/dsh-plugin-memory",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-message-edit": {
+    "repo": "SpookySandwich/dsh-plugin-message-edit",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-mobile-gateway": {
+    "repo": "Clarklevis1995/dsh-plugin-mobile-gateway",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-opc": {
+    "repo": "shtokendance/dsh-plugin-opc",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-panel": {
+    "repo": "jqlong17/dsh-plugin-panel",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-prompt": {
+    "repo": "qifenglun1/dsh-plugin-prompt",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-prompt-tool": {
+    "repo": "Czerror/dsh-plugin-prompt-tool",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-rea": {
+    "repo": "czcdr/dsh-plugin-rea",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-remote-access": {
+    "repo": "Mzy123l/dsh-plugin-remote-access",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-reverse-proxy": {
+    "repo": "llifco/dsh-plugin-reverse-proxy",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-save-token": {
+    "repo": "vibe-any/dsh-plugin-save-token",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-shop": {
+    "repo": "LivXue/dsh-plugin-shop",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-shop-catalog": {
+    "repo": "LivXue/dsh-plugin-shop",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-smooth-stream": {
+    "repo": "SpookySandwich/dsh-plugin-smooth-stream",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-space": {
+    "repo": "hanfang5057-byte/co-space",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-subscriptions": {
+    "repo": "V1ki/dsh-plugin-subscriptions",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-tether": {
+    "repo": "zexadev/dsh-tether",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-tool-management": {
+    "repo": "ouli-1242/dsh-plugin-tool-management",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-toolkit": {
+    "repo": "WJDdidi-1/dsh-plugin-toolkit",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-tower": {
+    "repo": null
+  },
+  "dsh-plugin-trim": {
+    "repo": "Starlit-Sky-code/dsh-experience-optimizer",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-update": {
+    "repo": "FeatherHunter/dsh-plugin-update",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-updates": {
+    "repo": "awesome-dsh-plugin/awesome-dsh-plugin",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-upgrader": {
+    "repo": "zuwenyin/dsh-plugin-upgrader",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-wallpaper-engine": {
+    "repo": "elysia395/dsh-wallpaper-engine",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-wallpaper-engine-pet-link": {
+    "repo": null
+  },
+  "dsh-plugin-weixin": {
+    "repo": "panqing0313/dsh-plugin-weixin",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-whale-pet": {
+    "repo": "Yifffan/dsh-plugin-whale-pet",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-wsl-env": {
+    "repo": "Big-Dao/dsh-plugin-wsl-env",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-yushe": {
+    "repo": "yuna78/dsh-plugin-yushe",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-plugin-zotero": {
+    "repo": "peijiping/dsh-plugin-zotero",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-ppt-master-wrapper": {
+    "repo": "SAXEM1997/dsh-ppt-master-wrapper",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-providers-hub": {
+    "repo": null
+  },
+  "dsh-revive-love": {
+    "repo": "123kiana/dsh-revive-love",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-rss-news-daily": {
+    "repo": "terry2010/dsh-rss-news-daily",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-server-deploy": {
+    "repo": "max-holo/dsh-server-deploy",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-session-delete-cascade": {
+    "repo": "Changqin1024/dsh-session-delete-cascade",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-session-manager": {
+    "repo": "hkkz9522/dsh-session-manager",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-snapcompact": {
+    "repo": "Cyberbolt/dsh-snapcompact",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-speak-up": {
+    "repo": "Yuuyuko-uu/dsh-speak-up",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-stock-analysis": {
+    "repo": "Weaxs/stock-analysis-plugin",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-team-pulse": {
+    "repo": null
+  },
+  "dsh-thinking-lang": {
+    "repo": "aymidasing/dsh-thinking-lang",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-tiered-plugin-menu": {
+    "repo": "kazari-qwp/dsh-tiered-plugin-menu",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-timeline": {
+    "repo": "houyanchao/dsh-timeline",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-tree-view": {
+    "repo": "Rice00/dsh-tree-view",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-wb-desk": {
+    "repo": "elegant01/dsh-wb-desk",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-windows-mcp": {
+    "repo": "helloHub1212/dsh-windows-mcp",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-workspace-api-key": {
+    "repo": "COH2357/dsh-workspace-api-key",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-workspace-plus": {
+    "repo": "Sen70s/dsh-workspace-plus",
+    "error": "repo-fetch-failed"
+  },
+  "dsh-yaoking-company-office": {
+    "repo": "YaoJunhaoya/dsh-yaoking-company-office",
+    "error": "repo-fetch-failed"
+  },
+  "justskill-design": {
+    "repo": "justskill-ai/justskill-design",
+    "error": "repo-fetch-failed"
+  },
+  "transproof-dsh-plugin": {
+    "repo": null
+  }
+}

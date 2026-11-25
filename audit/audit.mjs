@@ -241,7 +241,10 @@ for (let i = 0; i < argv.length; i++) {
   if (a.startsWith('--')) continue
   names.push(a)
 }
-if (fromFile) names = names.concat(JSON.parse(readFileSync(fromFile, 'utf8')))
+if (fromFile) {
+  const raw = JSON.parse(readFileSync(fromFile, 'utf8'))
+  names = names.concat(raw.map((x) => (typeof x === 'string' ? x : x?.name)).filter(Boolean))
+}
 
 if (names.length === 0) {
   console.error('用法: node audit/audit.mjs <包名...> [--out out/]')
