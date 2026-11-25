@@ -3,3 +3,6 @@ slice-*.json
 log-*.txt
 catalog/
 research/niche.json
+out200/cache/
+out200b/cache/
+out/cache/
