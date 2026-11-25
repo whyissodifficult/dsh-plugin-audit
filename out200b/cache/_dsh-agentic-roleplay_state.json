@@ -1,0 +1,46 @@
+{
+  "name": "@dsh-agentic-roleplay/state",
+  "version": "0.14.0",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 439187,
+  "fileCount": 16,
+  "deps": 1,
+  "license": "GPL-3.0-only",
+  "published": "2026-11-24T21:07:08.237Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "no-cleanup",
+      "level": "mid",
+      "hit": true,
+      "note": "代码里没有找到卸载清理（ctx.effect/dispose）"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "huge-files"
+  ]
+}

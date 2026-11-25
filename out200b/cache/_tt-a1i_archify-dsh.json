@@ -1,0 +1,79 @@
+{
+  "name": "@tt-a1i/archify-dsh",
+  "version": "1.2.0",
+  "grade": "B",
+  "score": 84,
+  "tarballBytes": 4506688,
+  "fileCount": 446,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-23T02:14:10.377Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 skills/archify/bin/archify.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 skills/archify/explainer/parse.mjs 里出现网络调用/硬编码域名；具体：www.w3.org , example.com , maven.apache.org"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "no-cleanup",
+      "level": "mid",
+      "hit": true,
+      "note": "代码里没有找到卸载清理（ctx.effect/dispose）"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "1 个 >2MB 的文件（skills/archify/modules/code-analysis/vendor/typescript.cjs…）"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": [
+      "www.w3.org",
+      "example.com",
+      "maven.apache.org",
+      "html.spec.whatwg.org",
+      "developers.google.com",
+      "airtable.com",
+      "www.alibabagroup.com",
+      "angular.dev",
+      "spdx.org",
+      "www.ansible.com",
+      "www.anthropic.com",
+      "apache.org"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines"
+  ]
+}

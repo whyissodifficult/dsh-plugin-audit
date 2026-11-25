@@ -1,0 +1,62 @@
+{
+  "name": "dsh-mobile-plugin-catalog",
+  "version": "2026.1125.94",
+  "grade": "B",
+  "score": 80,
+  "tarballBytes": 19961,
+  "fileCount": 4,
+  "deps": 0,
+  "license": "CC0-1.0",
+  "published": "2026-11-25T11:35:32.486Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "dsh-manifest",
+      "level": "mid",
+      "hit": true,
+      "note": "package.json 无 dsh 字段（可能不是 DSH 插件）"
+    },
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "weak-readme",
+      "level": "low",
+      "hit": true,
+      "note": "README 907 字节"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "no-cleanup",
+      "level": "mid",
+      "hit": true,
+      "note": "代码里没有找到卸载清理（ctx.effect/dispose）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "bundle-patch-file",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "huge-files"
+  ]
+}

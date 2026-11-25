@@ -1,0 +1,83 @@
+{
+  "name": "dsh-plugin-weixin",
+  "version": "1.5.14",
+  "grade": "C",
+  "score": 69,
+  "tarballBytes": 6273101,
+  "fileCount": 244,
+  "deps": 3,
+  "license": "MIT",
+  "published": "2026-11-23T11:16:59.550Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/check.mjs 里出现 .dsh 路径；具体：/usr/local/bin/python3.14 , /opt/homebrew/bin/python3 , ~/.dsh/settings.yaml"
+    },
+    {
+      "id": "destructive-ops",
+      "level": "high",
+      "hit": true,
+      "note": "在 src/asr-remote.js 里出现破坏性命令（与其职责不符，需重点核查）"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/backup.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/login.js 里出现网络调用/硬编码域名；具体：ilinkai.weixin.qq.com , hf-mirror.com , huggingface.co"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "/usr/local/bin/python3.14",
+      "/opt/homebrew/bin/python3",
+      "~/.dsh/settings.yaml",
+      "~/.dsh/weixin",
+      "/etc/passwd",
+      "/var/...",
+      "/etc/passwd/anything",
+      "C:\\\\x\\\\y.png",
+      "~/.dsh/weixin/logs",
+      "~/.dsh/weixin/"
+    ],
+    "domains": [
+      "ilinkai.weixin.qq.com",
+      "hf-mirror.com",
+      "huggingface.co",
+      "liteapp.weixin.qq.com",
+      "novac2c.cdn.weixin.qq.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

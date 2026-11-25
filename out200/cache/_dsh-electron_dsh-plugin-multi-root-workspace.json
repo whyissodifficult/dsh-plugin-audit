@@ -1,0 +1,62 @@
+{
+  "name": "@dsh-electron/dsh-plugin-multi-root-workspace",
+  "version": "0.1.24",
+  "grade": "C",
+  "score": 69,
+  "tarballBytes": 1931274,
+  "fileCount": 328,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-11-24T14:24:05.099Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/command-Df5ZG7In.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "destructive-ops",
+      "level": "high",
+      "hit": true,
+      "note": "在 lib/command-Df5ZG7In.js 里出现破坏性命令（与其职责不符，需重点核查）"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/command-Df5ZG7In.js 里调用子进程"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "1 个 >2MB 的文件（lib/client.js.map…）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup"
+  ]
+}

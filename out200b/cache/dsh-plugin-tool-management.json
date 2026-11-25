@@ -1,0 +1,82 @@
+{
+  "name": "dsh-plugin-tool-management",
+  "version": "0.23.0",
+  "grade": "C",
+  "score": 69,
+  "tarballBytes": 3465607,
+  "fileCount": 194,
+  "deps": 3,
+  "license": "MIT",
+  "published": "2026-11-23T12:48:24.482Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/compat/capability-specs.js 里出现 .dsh 路径；具体：~/.dsh/cordis.patch.yml , ~/.dsh/AGENTS.md , /usr/local"
+    },
+    {
+      "id": "destructive-ops",
+      "level": "high",
+      "hit": true,
+      "note": "在 lib/evolution/gates.js 里出现破坏性命令（与其职责不符，需重点核查）"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/skills/system-trash.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/evolution/gates.js 里出现网络调用/硬编码域名；具体：example.com , registry.npmmirror.com"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "1 个 >2MB 的文件（lib/client.js…）"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "~/.dsh/cordis.patch.yml",
+      "~/.dsh/AGENTS.md",
+      "/usr/local",
+      "C:\\foo",
+      "~/.dsh/tool-management/",
+      "~/.dsh/tool-management/mcp-export.json",
+      "D:\\重要数据",
+      "C:\\Proj",
+      "c:\\proj",
+      ".dsh/skills",
+      "~/.dsh/tool-management/trash/",
+      "~/.dsh/skills/"
+    ],
+    "domains": [
+      "example.com",
+      "registry.npmmirror.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup"
+  ]
+}

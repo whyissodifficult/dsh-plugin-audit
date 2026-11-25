@@ -86,7 +86,7 @@ const isCode = (rel) => CODE_EXT.test(rel) && !/\.d\.ts$/i.test(rel) && !/^packa
  * 每条规则返回 { id, level: 'high'|'mid'|'low', hit: boolean, note?: string }
  * level 表示“命中时的问题严重度”，用于扣分与展示。
  */
-function runRules(pkg, files, texts, codeTexts) {
+function runRules(pkg, files, texts, codeTexts, evidence) {
   const rules = []
   const add = (id, level, hit, note = '') => rules.push({ id, level, hit, note })
 
@@ -121,7 +121,8 @@ function runRules(pkg, files, texts, codeTexts) {
 
   // 敏感路径：读写 ~/.dsh 之类
   const sensitive = codeTexts.find((t) => /\.dsh\b|\.dsh\/|\.dsh\\\\/.test(t.text))
-  add('touches-dsh-home', 'low', Boolean(sensitive), sensitive ? `在 ${sensitive.rel} 里出现 .dsh 路径` : '')
+  add('touches-dsh-home', 'low', Boolean(sensitive),
+    sensitive ? `在 ${sensitive.rel} 里出现 .dsh 路径${evidence.paths.length ? `；具体：${evidence.paths.slice(0, 3).join(' , ')}` : ''}` : '')
 
   // 破坏性命令
   const destructive = codeTexts.find((t) => /\brm\s+-rf\b|Remove-Item\s+.*-Recurse|\bgit\s+clean\s+-[a-z]*[dfx]|rimraf/.test(t.text))
@@ -139,7 +140,8 @@ function runRules(pkg, files, texts, codeTexts) {
 
   // 网络出口
   const net = codeTexts.find((t) => /\bfetch\(|https?:\/\/[a-z0-9.-]+\.(com|cn|io|net)/i.test(t.text))
-  add('network-egress', 'low', Boolean(net), net ? `在 ${net.rel} 里出现网络调用/硬编码域名` : '')
+  add('network-egress', 'low', Boolean(net),
+    net ? `在 ${net.rel} 里出现网络调用/硬编码域名${evidence.domains.length ? `；具体：${evidence.domains.slice(0, 3).join(' , ')}` : ''}` : '')
 
   // 依赖面
   const deps = Object.keys(pkg.dependencies ?? {})
@@ -160,6 +162,25 @@ function runRules(pkg, files, texts, codeTexts) {
   add('huge-files', 'low', big.length > 0, big.length ? `${big.length} 个 >2MB 的文件（${big[0].rel}…）` : '')
 
   return rules
+}
+
+/** 从代码里抽出"具体碰了什么"：路径与域名（只取证据，不做判断）。 */
+function extractEvidence(codeTexts) {
+  const paths = new Set()
+  const domains = new Set()
+  const PATH_RE = /['"`]([~.]?[A-Za-z0-9_./\\-]*[./\\]?\.dsh[/\\][^'"`\s]{0,80})['"`]/g
+  const ABS_RE = /['"`]((?:[A-Za-z]:[\\/]|\/(?:etc|usr|var|home|opt)\/)[^'"`\s]{2,80})['"`]/g
+  const URL_RE = /https?:\/\/([a-z0-9.-]+\.[a-z]{2,})/gi
+  const SKIP = /^(localhost|127\.0\.0\.1|github\.com|raw\.githubusercontent\.com|registry\.npmjs\.org|www\.npmjs\.com|npmjs\.com|api\.github\.com|nodejs\.org|opensource\.org|creativecommons\.org|img\.shields\.io|shields\.io)$/i
+  for (const { text } of codeTexts) {
+    for (const m of text.matchAll(PATH_RE)) if (paths.size < 12) paths.add(m[1])
+    for (const m of text.matchAll(ABS_RE)) if (paths.size < 12) paths.add(m[1])
+    for (const m of text.matchAll(URL_RE)) {
+      const host = m[1].toLowerCase()
+      if (!SKIP.test(host) && domains.size < 12) domains.add(host)
+    }
+  }
+  return { paths: [...paths], domains: [...domains] }
 }
 
 function scoreOf(rules) {
@@ -209,7 +230,8 @@ async function auditOne(name) {
       .map((f) => ({ rel: f.rel, text: readText(f.abs) }))
 
     const codeTexts = texts.filter((t) => isCode(t.rel))
-    const rules = runRules(pkg, files, texts, codeTexts)
+    const evidence = extractEvidence(codeTexts)
+    const rules = runRules(pkg, files, texts, codeTexts, evidence)
     const score = scoreOf(rules)
     return {
       name, version: latest,
@@ -221,6 +243,7 @@ async function auditOne(name) {
       published: packument.time?.[latest] ?? null,
       weeklyDownloads: null,
       findings: rules.filter((r) => r.hit),
+      evidence,
       passed: rules.filter((r) => !r.hit).map((r) => r.id),
     }
   } finally {

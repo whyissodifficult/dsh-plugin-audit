@@ -1,0 +1,52 @@
+{
+  "name": "dsh-claude-motion",
+  "version": "2.16.0",
+  "grade": "A",
+  "score": 88,
+  "tarballBytes": 2394466,
+  "fileCount": 38,
+  "deps": 1,
+  "license": "SEE LICENSE IN LICENSE",
+  "published": "2026-11-13T08:09:30.100Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 skills/claude-motion/scripts/editor/share-ui.js 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "no-cleanup",
+      "level": "mid",
+      "hit": true,
+      "note": "代码里没有找到卸载清理（ctx.effect/dispose）"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "1 个 >2MB 的文件（skills/claude-motion/scripts/editor/artifact-type/app.js…）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range"
+  ]
+}

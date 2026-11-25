@@ -1,0 +1,62 @@
+{
+  "name": "dsh-plugin-wallpaper-engine-pet-link",
+  "version": "1.4.3",
+  "grade": "A",
+  "score": 88,
+  "tarballBytes": 20963146,
+  "fileCount": 30,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-18T16:53:55.870Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.pet-link.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.pet-link.js 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "5 个 >2MB 的文件（assets/memes/吓哭了.png…）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-cleanup"
+  ]
+}

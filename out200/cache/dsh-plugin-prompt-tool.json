@@ -1,0 +1,52 @@
+{
+  "name": "dsh-plugin-prompt-tool",
+  "version": "6.3.1",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 1260753,
+  "fileCount": 346,
+  "deps": 4,
+  "license": "MIT",
+  "published": "2026-11-22T09:02:50.531Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 engine/machine-paths.mjs 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 engine/tool-config-engine.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 engine/tool-config-engine.mjs 里出现网络调用/硬编码域名"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

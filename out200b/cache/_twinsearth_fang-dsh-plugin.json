@@ -1,0 +1,84 @@
+{
+  "name": "@twinsearth/fang-dsh-plugin",
+  "version": "3.8.4",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 844458,
+  "fileCount": 199,
+  "deps": 1,
+  "license": "AGPL-3.0-or-later",
+  "published": "2026-11-25T07:43:40.179Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/kernel/paths.mjs 里出现 .dsh 路径；具体：E:\\\\path\\\\to\\\\my-plugin , D:\\\\ToFuture\\\\FangData , E:\\\\DSH\\\\DS"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/contract/transports.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 sdk/examples/status-badge/client.js 里出现网络调用/硬编码域名；具体：example.com , example.com.evil , api.deepseek.com"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "E:\\\\path\\\\to\\\\my-plugin",
+      "D:\\\\ToFuture\\\\FangData",
+      "E:\\\\DSH\\\\DS",
+      "E:\\\\DSH\\\\DS\\\\Fang",
+      "D:\\\\DSH\\\\DS\\\\Fang",
+      "C:\\\\ProgramData\\\\Microsoft\\\\Search\\\\Data\\\\Applications\\\\Windows\\\\windows.db",
+      "C:\\\\ProgramData\\\\Microsoft\\\\Search\\\\Data\\\\Applications\\\\Windows\\\\Windows.edb",
+      "D:\\.pnpm-store\\v11",
+      "E:\\GPT",
+      "C:\\Users\\a\\b\\c",
+      "E:\\\\work\\\\x",
+      "E:\\\\DSH"
+    ],
+    "domains": [
+      "example.com",
+      "example.com.evil",
+      "api.deepseek.com",
+      "api.moonshot.cn",
+      "open.bigmodel.cn",
+      "ark.cn-beijing.volces.com",
+      "dashscope.aliyuncs.com",
+      "api.hunyuan.cloud.tencent.com",
+      "fang.local"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

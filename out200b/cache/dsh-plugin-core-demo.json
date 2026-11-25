@@ -1,0 +1,56 @@
+{
+  "name": "dsh-plugin-core-demo",
+  "version": "0.46.11",
+  "grade": "A",
+  "score": 88,
+  "tarballBytes": 936936,
+  "fileCount": 9,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-25T09:14:16.256Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "no-cleanup",
+      "level": "mid",
+      "hit": true,
+      "note": "代码里没有找到卸载清理（ctx.effect/dispose）"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "1 个 >2MB 的文件（dist/client.js…）"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines"
+  ]
+}

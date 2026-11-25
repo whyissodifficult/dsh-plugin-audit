@@ -1,0 +1,48 @@
+{
+  "name": "@1outres/dsh-plugin-scratchpad",
+  "version": "0.15.0",
+  "grade": "A",
+  "score": 96,
+  "tarballBytes": 14925,
+  "fileCount": 10,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-11-23T12:11:12.314Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.js 里出现 .dsh 路径；具体：~/.dsh/scratchpad"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "~/.dsh/scratchpad"
+    ],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "@linxin666/dsh-client-ui-skill-explorer",
+  "version": "0.4.22",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 128790,
+  "fileCount": 38,
+  "deps": 0,
+  "license": "BSD-3-Clause",
+  "published": "2026-11-24T09:14:13.159Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.js 里出现网络调用/硬编码域名；具体：dsh-market.com"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": [
+      "dsh-market.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "name": "dsh-fish-soul",
+  "version": "0.18.25",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 816281,
+  "fileCount": 109,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-25T07:28:17.709Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/db.js 里出现 .dsh 路径；具体：/usr/bin , /usr/local/bin , /opt/google/chrome"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/browsers.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/bili-emotes.js 里出现网络调用/硬编码域名；具体：api.bilibili.com , www.bilibili.com , api.vc.bilibili.com"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "/usr/bin",
+      "/usr/local/bin",
+      "/opt/google/chrome",
+      "/usr/bin/google-chrome",
+      "/usr/bin/chromium",
+      "/usr/bin/microsoft-edge",
+      "C:\\\\…\\\\chrome.exe",
+      "/usr/local/lib/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai",
+      "/usr/lib/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai",
+      "/usr/local/lib/node_modules/@deepseek-ai",
+      "/usr/lib/node_modules/@deepseek-ai",
+      "~/.dsh/profiles/<profile>/node_modules/…"
+    ],
+    "domains": [
+      "api.bilibili.com",
+      "www.bilibili.com",
+      "api.vc.bilibili.com",
+      "passport.bilibili.com",
+      "message.bilibili.com",
+      "t.bilibili.com",
+      "www.douyin.com",
+      "www.w3.org",
+      "tos-d-x-hl.douyin.com",
+      "imapi.douyin.com",
+      "ark.cn-beijing.volces.com",
+      "api.minimax.cn"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "dsh-install-doctor",
+  "version": "0.3.3",
+  "grade": "A",
+  "score": 94,
+  "tarballBytes": 46512,
+  "fileCount": 17,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-11-15T04:56:42.194Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/doctor.mjs 里出现 .dsh 路径；具体：/usr/local/lib/node_modules/@deepseek-ai/dsh/node_modules , /usr/lib/node_modules/@deepseek-ai/dsh/node_modules , C:/explicit/profile"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/dshversion.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/registry.mjs 里出现网络调用/硬编码域名"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "/usr/local/lib/node_modules/@deepseek-ai/dsh/node_modules",
+      "/usr/lib/node_modules/@deepseek-ai/dsh/node_modules",
+      "C:/explicit/profile"
+    ],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "no-tests-in-package",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

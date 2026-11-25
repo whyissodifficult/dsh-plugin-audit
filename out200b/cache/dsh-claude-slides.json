@@ -1,0 +1,72 @@
+{
+  "name": "dsh-claude-slides",
+  "version": "2.16.0",
+  "grade": "A",
+  "score": 86,
+  "tarballBytes": 4828094,
+  "fileCount": 41,
+  "deps": 1,
+  "license": "SEE LICENSE IN LICENSE",
+  "published": "2026-11-13T08:10:37.953Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 skills/claude-slides/scripts/artifact.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 skills/claude-slides/scripts/artifact.mjs 里出现网络调用/硬编码域名；具体：fonts.googleapis.com , www.youtube-nocookie.com , player.vimeo.com"
+    },
+    {
+      "id": "no-cleanup",
+      "level": "mid",
+      "hit": true,
+      "note": "代码里没有找到卸载清理（ctx.effect/dispose）"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "2 个 >2MB 的文件（skills/claude-slides/scripts/editor/assets/index-C-TTqD5o.js…）"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": [
+      "fonts.googleapis.com",
+      "www.youtube-nocookie.com",
+      "player.vimeo.com",
+      "www.loom.com",
+      "drive.google.com",
+      "i.ytimg.com",
+      "i.vimeocdn.com",
+      "cdn.loom.com",
+      "vimeo.com",
+      "fonts.gstatic.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range"
+  ]
+}

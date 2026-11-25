@@ -1,0 +1,57 @@
+{
+  "name": "@huaqiu/dsh-tool-pcb-viewer",
+  "version": "0.7.18",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 1124385,
+  "fileCount": 25,
+  "deps": 2,
+  "license": "MIT",
+  "published": "2026-11-25T08:54:41.236Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/client/standalone.ts 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "2 个 >2MB 的文件（lib/client.js…）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-cleanup"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "justskill-design",
+  "version": "3.4.0",
+  "grade": "A",
+  "score": 94,
+  "tarballBytes": 570735,
+  "fileCount": 70,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-22T06:35:14.716Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/node/raster-run.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 canvas/app.mjs 里出现网络调用/硬编码域名；具体：www.w3.org , fonts.googleapis.com"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "C:\\a\\b.html",
+      "/usr/bin/google-chrome",
+      "/usr/bin/google-chrome-stable",
+      "/usr/bin/chromium",
+      "/usr/bin/chromium-browser",
+      "/usr/bin/microsoft-edge",
+      "/usr/bin/microsoft-edge-stable"
+    ],
+    "domains": [
+      "www.w3.org",
+      "fonts.googleapis.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

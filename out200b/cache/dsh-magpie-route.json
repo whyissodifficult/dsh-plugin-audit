@@ -1,0 +1,46 @@
+{
+  "name": "dsh-magpie-route",
+  "version": "1.6.2",
+  "grade": "A",
+  "score": 96,
+  "tarballBytes": 94305,
+  "fileCount": 13,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-23T08:22:19.114Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 client.js 里出现网络调用/硬编码域名"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

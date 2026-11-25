@@ -1,0 +1,42 @@
+{
+  "name": "@jayyuen66/dsh-danger-guard",
+  "version": "0.1.21",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 230003,
+  "fileCount": 57,
+  "deps": 2,
+  "license": "MIT",
+  "published": "2026-11-23T16:53:24.435Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "destructive-ops",
+      "level": "mid",
+      "hit": true,
+      "note": "在 host.js 里出现破坏性命令（与其职责相符：备份/清理类）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

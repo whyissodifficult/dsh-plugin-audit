@@ -1,0 +1,42 @@
+{
+  "name": "@wenaixi/dsh-ponytail",
+  "version": "5.6.7",
+  "grade": "A",
+  "score": 96,
+  "tarballBytes": 807959,
+  "fileCount": 58,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-11-25T06:30:13.905Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/ponytail-config.js 里出现 .dsh 路径"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

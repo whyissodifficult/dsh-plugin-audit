@@ -1,0 +1,68 @@
+{
+  "name": "dsh-plugin-panel",
+  "version": "0.1.18",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 391124,
+  "fileCount": 21,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-19T03:48:49.195Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/check.js 里出现 .dsh 路径；具体：~/.dsh/profiles/<profile>/.plugin-panel , .dsh/profiles/desktop"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 index.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/selftest.js 里出现网络调用/硬编码域名；具体：www.w3.org , cdn.jsdelivr.net , unpkg.com"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "~/.dsh/profiles/<profile>/.plugin-panel",
+      ".dsh/profiles/desktop"
+    ],
+    "domains": [
+      "www.w3.org",
+      "cdn.jsdelivr.net",
+      "unpkg.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

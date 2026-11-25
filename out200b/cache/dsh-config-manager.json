@@ -1,0 +1,79 @@
+{
+  "name": "dsh-config-manager",
+  "version": "0.12.0",
+  "grade": "B",
+  "score": 84,
+  "tarballBytes": 8152305,
+  "fileCount": 1936,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-11-21T22:08:05.385Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/adapters/agent-instructions.js 里出现 .dsh 路径；具体：C:/Users/alice=D:/Work , C:/x/.dsh , C:\\x\\.dsh"
+    },
+    {
+      "id": "destructive-ops",
+      "level": "mid",
+      "hit": true,
+      "note": "在 lib/core/reinstall.js 里出现破坏性命令（与其职责相符：备份/清理类）"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/cli/index.js 里调用子进程"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "1 个 >2MB 的文件（lib/client.js…）"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "C:/Users/alice=D:/Work",
+      "C:/x/.dsh",
+      "C:\\x\\.dsh",
+      "C:\\dev\\x",
+      "D:\\dev\\x",
+      "/opt/homebrew/bin",
+      "/usr/local/bin",
+      ".dsh/.dsh-any-background-data",
+      "~/.dsh/sessions/<项目键>/",
+      "D:\\\\work\\\\proj",
+      "D:\\\\work",
+      "D:\\\\work/子目录"
+    ],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "dsh-kumquat",
+  "version": "0.1.0",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 746591,
+  "fileCount": 99,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-21T09:31:04.415Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/app/service.js 里出现 .dsh 路径；具体：C:\\\\ffmpeg\\\\bin\\\\ffmpeg.exe , C:\\\\ffmpeg\\\\bin\\\\ffprobe.exe , C:\\\\fake\\\\input.mp4"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/binary/exec.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 client.js 里出现网络调用/硬编码域名；具体：www.gyan.dev , johnvansickle.com , evermeet.cx"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "C:\\\\ffmpeg\\\\bin\\\\ffmpeg.exe",
+      "C:\\\\ffmpeg\\\\bin\\\\ffprobe.exe",
+      "C:\\\\fake\\\\input.mp4",
+      "C:\\\\Users\\\\你\\\\Downloads\\\\Kumquat\\\\${",
+      "C:\\\\Users\\\\你\\\\Downloads\\\\Kumquat\\\\evidence\\\\verify.json",
+      "D:\\\\示例\\\\video.mp4",
+      "C:\\Windows\\System32\\tar.exe",
+      "~/.dsh/kumquat/bin",
+      "~/.dsh/kumquat",
+      "C:\\\\ffmpeg\\\\bin",
+      "C:\\\\ffmpeg",
+      "/opt/homebrew/bin"
+    ],
+    "domains": [
+      "www.gyan.dev",
+      "johnvansickle.com",
+      "evermeet.cx",
+      "ffmpeg.org",
+      "api.deepseek.com",
+      "kumquat.invalid"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

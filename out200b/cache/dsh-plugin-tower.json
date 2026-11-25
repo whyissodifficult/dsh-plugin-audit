@@ -1,0 +1,60 @@
+{
+  "name": "dsh-plugin-tower",
+  "version": "0.11.0",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 139111,
+  "fileCount": 38,
+  "deps": 0,
+  "license": "Apache-2.0",
+  "published": "2026-11-22T07:52:33.996Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 client.js 里出现 .dsh 路径；具体：~/.dsh/ledger/*.json"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 scripts/run-tests.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 client.js 里出现网络调用/硬编码域名；具体：evil.example"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "~/.dsh/ledger/*.json"
+    ],
+    "domains": [
+      "evil.example"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "no-tests-in-package",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

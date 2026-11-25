@@ -1,0 +1,81 @@
+{
+  "name": "dsh-plugin-mobile-gateway",
+  "version": "0.12.4",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 4791831,
+  "fileCount": 154,
+  "deps": 4,
+  "license": "MIT",
+  "published": "2026-11-23T14:14:24.845Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/index.mjs 里出现 .dsh 路径；具体：/etc/dsh-mobile-gateway , /var/lib/dsh-mobile-gateway/acme , /etc/nginx/conf.d/dsh-mobile-gateway.conf"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/setup-ip.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/bot-bridge.mjs 里出现网络调用/硬编码域名；具体：www.w3.org , testflight.apple.com , apps.apple.com"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "2 个 >2MB 的文件（docs/assets/whale-girl-ios-app-promo-16x9.png…）"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "/etc/dsh-mobile-gateway",
+      "/var/lib/dsh-mobile-gateway/acme",
+      "/etc/nginx/conf.d/dsh-mobile-gateway.conf",
+      "/opt/dsh-mobile-gateway/certbot",
+      "/etc/systemd/system/dsh-mobile-gateway-cert-renew.service",
+      "/etc/systemd/system/dsh-mobile-gateway-cert-renew.timer",
+      "/usr/local/libexec/dsh-mobile-gateway-helper",
+      "/etc/systemd/system/dsh-mobile-gateway-helper.service",
+      "/etc/letsencrypt",
+      "/var/lib/letsencrypt",
+      "/var/log/letsencrypt",
+      "/etc/letsencrypt/live/${certName(ip)}"
+    ],
+    "domains": [
+      "www.w3.org",
+      "testflight.apple.com",
+      "apps.apple.com",
+      "lan.invalid",
+      "www.google.com",
+      "maps.apple.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "no-tests-in-package",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup"
+  ]
+}

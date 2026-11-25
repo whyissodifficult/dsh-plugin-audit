@@ -1,0 +1,75 @@
+{
+  "name": "dsh-plugin-image-workbench",
+  "version": "1.1.56",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 16069369,
+  "fileCount": 190,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-18T04:43:55.611Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 client.js 里出现 .dsh 路径；具体：~/.dsh/image-workbench/backend.log , C:\\\\Python313 , C:\\\\Python312"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 host.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 client.js 里出现网络调用/硬编码域名；具体：pypi.tuna.tsinghua.edu.cn , mirrors.aliyun.com , pypi.org"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "1 个 >2MB 的文件（vendor/chatgpt2api/runtime/uv.exe…）"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "~/.dsh/image-workbench/backend.log",
+      "C:\\\\Python313",
+      "C:\\\\Python312",
+      "C:\\\\Python311",
+      "C:\\\\Python310"
+    ],
+    "domains": [
+      "pypi.tuna.tsinghua.edu.cn",
+      "mirrors.aliyun.com",
+      "pypi.org",
+      "img.handraw-style.com",
+      "gitee.com",
+      "canvas.best",
+      "chatgpt.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup"
+  ]
+}

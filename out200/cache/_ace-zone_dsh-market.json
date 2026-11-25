@@ -1,0 +1,57 @@
+{
+  "name": "@ace-zone/dsh-market",
+  "version": "0.1.67",
+  "grade": "C",
+  "score": 69,
+  "tarballBytes": 819068,
+  "fileCount": 8,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-10-29T07:38:42.007Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/client.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "destructive-ops",
+      "level": "high",
+      "hit": true,
+      "note": "在 src/host.js 里出现破坏性命令（与其职责不符，需重点核查）"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/client.js 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "1 个 >2MB 的文件（README.md…）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup"
+  ]
+}

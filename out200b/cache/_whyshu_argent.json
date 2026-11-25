@@ -1,0 +1,70 @@
+{
+  "name": "@whyshu/argent",
+  "version": "0.13.7",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 394925,
+  "fileCount": 51,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-11-25T08:41:30.326Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 mcp/gateway.mjs 里出现 .dsh 路径；具体：~/.dsh/.credentials.yaml , ~/.dsh/argent/whyshu.env , ~/.dsh/argent/hr-audit.jsonl"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 mcp/gateway.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 mcp/erp-server.mjs 里出现网络调用/硬编码域名；具体：whyshu.com"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "~/.dsh/.credentials.yaml",
+      "~/.dsh/argent/whyshu.env",
+      "~/.dsh/argent/hr-audit.jsonl",
+      "~/.dsh/argent/error-log.jsonl",
+      "~/.dsh/argent",
+      "~/.dsh/argent/agent-report.json"
+    ],
+    "domains": [
+      "whyshu.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

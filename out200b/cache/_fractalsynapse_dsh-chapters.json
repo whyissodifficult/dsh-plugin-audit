@@ -1,0 +1,69 @@
+{
+  "name": "@fractalsynapse/dsh-chapters",
+  "version": "0.2.50",
+  "grade": "C",
+  "score": 69,
+  "tarballBytes": 1032383,
+  "fileCount": 216,
+  "deps": 2,
+  "license": "Apache-2.0",
+  "published": "2026-11-24T14:56:46.609Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.js 里出现 .dsh 路径；具体：/home/adrian/Projects/saip , /home/u/p/src/sync.ts"
+    },
+    {
+      "id": "destructive-ops",
+      "level": "high",
+      "hit": true,
+      "note": "在 lib/gitops.js 里出现破坏性命令（与其职责不符，需重点核查）"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/codegraph.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/enrich-wire.js 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "/home/adrian/Projects/saip",
+      "/home/u/p/src/sync.ts"
+    ],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "dsh-plugin-mobile-gateway",
+  "version": "0.12.4",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 4791831,
+  "fileCount": 154,
+  "deps": 4,
+  "license": "MIT",
+  "published": "2026-11-23T14:14:24.845Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/index.mjs 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 bin/setup-ip.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/bot-bridge.mjs 里出现网络调用/硬编码域名"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "2 个 >2MB 的文件（docs/assets/whale-girl-ios-app-promo-16x9.png…）"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "no-tests-in-package",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "dsh-mcp-registry",
+  "version": "0.3.21",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 71101,
+  "fileCount": 20,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-11-22T02:21:30.852Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/index.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/index.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.js 里出现网络调用/硬编码域名；具体：dsh.internal"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": [
+      "dsh.internal"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

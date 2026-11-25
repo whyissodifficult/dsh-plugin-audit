@@ -1,0 +1,70 @@
+{
+  "name": "dsh-feiyu-life",
+  "version": "2.6.2",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 2870621,
+  "fileCount": 81,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-18T08:39:00.489Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 client.js 里出现 .dsh 路径；具体：/home/ubuntu/dsh-agentchat , /usr/bin/chromium , /usr/bin/chromium-browser"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 scripts/check-syntax.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 client.js 里出现网络调用/硬编码域名；具体：www.openstreetmap.org , www.w3.org"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "/home/ubuntu/dsh-agentchat",
+      "/usr/bin/chromium",
+      "/usr/bin/chromium-browser",
+      "/usr/bin/google-chrome",
+      "~/.dsh/feiyu-life-image/角色设定\\n也可以逐行填写正面、侧面、背面图片"
+    ],
+    "domains": [
+      "www.openstreetmap.org",
+      "www.w3.org"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

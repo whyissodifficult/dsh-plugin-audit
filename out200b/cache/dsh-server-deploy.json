@@ -1,0 +1,72 @@
+{
+  "name": "dsh-server-deploy",
+  "version": "1.2.5",
+  "grade": "A",
+  "score": 86,
+  "tarballBytes": 42166,
+  "fileCount": 10,
+  "deps": 2,
+  "license": "MIT",
+  "published": "2026-11-19T06:37:09.076Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 host.cjs 里出现 .dsh 路径；具体：/usr/share/nginx/html/app , /opt/app-backups , /opt/api"
+    },
+    {
+      "id": "destructive-ops",
+      "level": "mid",
+      "hit": true,
+      "note": "在 engine.cjs 里出现破坏性命令（与其职责相符：备份/清理类）"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/client.js 里出现网络调用/硬编码域名；具体：api.npmjs.org"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "/usr/share/nginx/html/app",
+      "/opt/app-backups",
+      "/opt/api",
+      "/opt/backups/api",
+      "/usr/share/nginx/html/web",
+      "/opt/backups/web",
+      "/opt/app",
+      "/opt/backups/app"
+    ],
+    "domains": [
+      "api.npmjs.org"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "spawns-process",
+    "git-deps",
+    "heavy-deps",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

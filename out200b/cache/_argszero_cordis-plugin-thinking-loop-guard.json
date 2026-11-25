@@ -1,0 +1,51 @@
+{
+  "name": "@argszero/cordis-plugin-thinking-loop-guard",
+  "version": "0.3.1",
+  "grade": "A",
+  "score": 94,
+  "tarballBytes": 51407,
+  "fileCount": 7,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-10-14T13:45:33.776Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

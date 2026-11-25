@@ -1,0 +1,62 @@
+{
+  "name": "@klarkxy/dsh-plugin-kit",
+  "version": "0.8.5",
+  "grade": "B",
+  "score": 84,
+  "tarballBytes": 358681,
+  "fileCount": 66,
+  "deps": 1,
+  "license": "SEE LICENSE IN LICENSE",
+  "published": "2026-11-19T15:59:49.294Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "dsh-manifest",
+      "level": "mid",
+      "hit": true,
+      "note": "package.json 无 dsh 字段（可能不是 DSH 插件）"
+    },
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "weak-readme",
+      "level": "low",
+      "hit": true,
+      "note": "README 509 字节"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/auxiliary-model.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/cli-process.js 里调用子进程"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "bundle-patch-file",
+    "no-license",
+    "destructive-ops",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

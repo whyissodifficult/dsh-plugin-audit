@@ -1,0 +1,63 @@
+{
+  "name": "dsh-plugin-tether",
+  "version": "0.1.34",
+  "grade": "A",
+  "score": 90,
+  "tarballBytes": 76623,
+  "fileCount": 7,
+  "deps": 0,
+  "license": "MIT",
+  "published": "2026-11-18T13:32:25.627Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 index.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 index.js 里出现网络调用/硬编码域名；具体：relay.example.org"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": [
+      "relay.example.org"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

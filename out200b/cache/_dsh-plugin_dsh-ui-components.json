@@ -1,0 +1,61 @@
+{
+  "name": "@dsh-plugin/dsh-ui-components",
+  "version": "0.0.1",
+  "grade": "B",
+  "score": 82,
+  "tarballBytes": 436559,
+  "fileCount": 5466,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-11-14T15:55:58.121Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "dsh-manifest",
+      "level": "mid",
+      "hit": true,
+      "note": "package.json 无 dsh 字段（可能不是 DSH 插件）"
+    },
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/basic/form.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "no-cleanup",
+      "level": "mid",
+      "hit": true,
+      "note": "代码里没有找到卸载清理（ctx.effect/dispose）"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "huge-files"
+  ]
+}

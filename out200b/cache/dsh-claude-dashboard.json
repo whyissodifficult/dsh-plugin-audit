@@ -1,0 +1,46 @@
+{
+  "name": "dsh-claude-dashboard",
+  "version": "2.16.0",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 21217,
+  "fileCount": 11,
+  "deps": 1,
+  "license": "SEE LICENSE IN LICENSE",
+  "published": "2026-11-13T08:06:14.930Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "发布包内没有测试文件"
+    },
+    {
+      "id": "no-cleanup",
+      "level": "mid",
+      "hit": true,
+      "note": "代码里没有找到卸载清理（ctx.effect/dispose）"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "huge-files"
+  ]
+}

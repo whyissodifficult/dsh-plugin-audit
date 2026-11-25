@@ -1,0 +1,73 @@
+{
+  "name": "dsh-diff-approval",
+  "version": "0.37.5",
+  "grade": "A",
+  "score": 88,
+  "tarballBytes": 15991706,
+  "fileCount": 216,
+  "deps": 5,
+  "license": "MIT",
+  "published": "2026-11-12T16:42:09.127Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/index.js 里出现 .dsh 路径；具体：C:\\Users\\<user>\\.dsh\\diff-approval\\workspaces , C:\\a\\b.ts , C:/a/b.ts"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/index.js 里调用子进程"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    },
+    {
+      "id": "huge-files",
+      "level": "low",
+      "hit": true,
+      "note": "1 个 >2MB 的文件（lib/client.js…）"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "C:\\Users\\<user>\\.dsh\\diff-approval\\workspaces",
+      "C:\\a\\b.ts",
+      "C:/a/b.ts",
+      "c:\\A\\B.TS",
+      "C:\\Repo",
+      "c:\\repo"
+    ],
+    "domains": []
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-cleanup"
+  ]
+}

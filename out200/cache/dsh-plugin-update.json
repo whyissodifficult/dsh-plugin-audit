@@ -1,0 +1,57 @@
+{
+  "name": "dsh-plugin-update",
+  "version": "0.18.39",
+  "grade": "A",
+  "score": 86,
+  "tarballBytes": 523819,
+  "fileCount": 185,
+  "deps": 1,
+  "license": "MIT",
+  "published": "2026-10-23T16:55:48.267Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "dsh-manifest",
+      "level": "mid",
+      "hit": true,
+      "note": "package.json 无 dsh 字段（可能不是 DSH 插件）"
+    },
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 dist/core/executor.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 dist/core/executor.js 里调用子进程"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "passed": [
+    "lifecycle-scripts",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

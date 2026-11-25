@@ -1,0 +1,61 @@
+{
+  "name": "@aiwayds/dsh-llm-proxy",
+  "version": "0.8.1",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 41210,
+  "fileCount": 26,
+  "deps": 1,
+  "license": "Apache-2.0",
+  "published": "2026-11-13T08:49:05.510Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 scripts/link-dsh-closure.mjs 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/match.js 里出现网络调用/硬编码域名；具体：api.deepseek.org , api.example.com"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "/opt/homebrew/bin/dsh"
+    ],
+    "domains": [
+      "api.deepseek.org",
+      "api.example.com"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

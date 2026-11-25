@@ -1,0 +1,77 @@
+{
+  "name": "dsh-mcp",
+  "version": "1.15.4",
+  "grade": "A",
+  "score": 88,
+  "tarballBytes": 871588,
+  "fileCount": 44,
+  "deps": 2,
+  "license": "MIT",
+  "published": "2026-11-21T14:13:25.663Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/cordis-servers.js 里出现 .dsh 路径；具体：/etc/ssl/cert.pem , /etc/ssl/certs/ca-certificates.crt , /etc/pki/tls/certs/ca-bundle.crt"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/oauth.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 lib/oauth.js 里出现网络调用/硬编码域名；具体：mcp.notion.com , fra.cloud.appwrite.io"
+    },
+    {
+      "id": "no-engines",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 engines.node"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [
+      "/etc/ssl/cert.pem",
+      "/etc/ssl/certs/ca-certificates.crt",
+      "/etc/pki/tls/certs/ca-bundle.crt",
+      "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+      ".dsh/source/current",
+      ".dsh/profiles/node_modules",
+      "C:\\Users\\..."
+    ],
+    "domains": [
+      "mcp.notion.com",
+      "fra.cloud.appwrite.io"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

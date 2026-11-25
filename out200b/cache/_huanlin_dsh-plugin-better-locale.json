@@ -1,0 +1,48 @@
+{
+  "name": "@huanlin/dsh-plugin-better-locale",
+  "version": "0.4.3",
+  "grade": "A",
+  "score": 96,
+  "tarballBytes": 1420397,
+  "fileCount": 54,
+  "deps": 0,
+  "license": "AGPL-3.0",
+  "published": "2026-09-11T10:28:25.619Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "no-dsh-range",
+      "level": "low",
+      "hit": true,
+      "note": "未声明 DSH 版本范围"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": [
+      "gateway.example"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "touches-dsh-home",
+    "destructive-ops",
+    "spawns-process",
+    "network-egress",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-cleanup",
+    "huge-files"
+  ]
+}

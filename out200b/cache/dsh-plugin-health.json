@@ -1,0 +1,61 @@
+{
+  "name": "dsh-plugin-health",
+  "version": "3.3.0",
+  "grade": "A",
+  "score": 92,
+  "tarballBytes": 432011,
+  "fileCount": 59,
+  "deps": 3,
+  "license": "MIT",
+  "published": "2026-11-19T04:17:37.230Z",
+  "weeklyDownloads": null,
+  "findings": [
+    {
+      "id": "no-tests-in-package",
+      "level": "low",
+      "hit": true,
+      "note": "有 test 脚本但发布包不含测试文件"
+    },
+    {
+      "id": "touches-dsh-home",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/cli.js 里出现 .dsh 路径"
+    },
+    {
+      "id": "spawns-process",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/rescue/environment.js 里调用子进程"
+    },
+    {
+      "id": "network-egress",
+      "level": "low",
+      "hit": true,
+      "note": "在 src/cli.js 里出现网络调用/硬编码域名；具体：awesome-dsh-plugin.com , example.com , www.w3.org"
+    }
+  ],
+  "evidence": {
+    "paths": [],
+    "domains": [
+      "awesome-dsh-plugin.com",
+      "example.com",
+      "www.w3.org",
+      "easonmws.github.io"
+    ]
+  },
+  "passed": [
+    "lifecycle-scripts",
+    "dsh-manifest",
+    "bundle-patch-file",
+    "weak-readme",
+    "no-license",
+    "destructive-ops",
+    "git-deps",
+    "heavy-deps",
+    "no-engines",
+    "no-dsh-range",
+    "no-cleanup",
+    "huge-files"
+  ]
+}
