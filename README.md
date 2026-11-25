@@ -6,6 +6,14 @@
 
 ## 用法
 
+> npm 包名还没发布（granular token 目前只授权了另一个包）。**现在就能这样跑**：
+
+```bash
+npx -y github:whyissodifficult/dsh-plugin-audit dsh-swarm-console
+```
+
+发布后可以直接用短名字：
+
 ```bash
 # 审计一个插件
 npx dsh-plugin-audit dsh-swarm-console
